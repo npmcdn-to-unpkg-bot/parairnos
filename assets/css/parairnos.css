@@ -4100,3 +4100,30 @@ a.menu-link:hover {
    left: 0;
    position: absolute;
 }
+.datepicker-months thead {
+  padding: 0 0 3px;
+  display: block;
+}
+
+#calendario-ocupacional .dp1461337200000, 
+#calendario-ocupacional .dp1456498800000,
+#calendario-ocupacional .ingreso, {
+   border-color: red !important;
+   background: #EAEAEA; /* Old browsers */
+   background: -moz-linear-gradient(-45deg,  #FFD2CA 50%, #EAEAEA 50%) !important;
+   background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#FFD2CA), color-stop(50%,#EAEAEA)) !important; */
+   background: -webkit-linear-gradient(-45deg,  #FFD2CA 50%,#EAEAEA 50%) !important; */
+   background: -o-linear-gradient(-45deg,  #FFD2CA 50%,#EAEAEA 50%) !important; */
+   background: -ms-linear-gradient(-45deg,  #FFD2CA 50%,#EAEAEA 50%) !important; */
+   background: linear-gradient(135deg,  #FFD2CA 50%,#EAEAEA 50%) !important; */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFD2CA', endColorstr='#EAEAEA',GradientType=1 ) !important;
+}
+
+
+
+#calendario-ocupacional .dp1457276400000:not(.datepick-other-month),
+#calendario-ocupacional .salida:not(.datepick-other-month) {
+   border-color: red !important;
+   background: #EAEAEA; /* Old browsers */
+   background: linear-gradient(-45deg,  #FFD2CA 50%, #EAEAEA 50%) !important;
+}
