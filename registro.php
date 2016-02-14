@@ -178,6 +178,7 @@
 <script src="assets/js/jquery.tagsinput.js"></script>
 <script src="assets/js/jquery.offcanvas.min.js"></script>
 <script src="assets/js/retina.min.js"></script>
+<script src="assets/js/validator.js"></script>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js"></script>
