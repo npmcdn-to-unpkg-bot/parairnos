@@ -1214,12 +1214,12 @@
 }
 
 .form-control.parairnosSearch:focus {
-    border-right: 2px solid #2ca8ff !important;
+    border-right: 1px solid #2ca8ff !important;
 }
 
 .SearchDesde,
 .SearchHasta {
-    width: 100px !important;
+    width: 80px !important;
     border: none !important;
     padding: 0px !important;
     height: 25px !important;
@@ -4081,4 +4081,22 @@ a.menu-link:hover {
 
 .calendar-table .key p {
   margin-bottom: 20px;
+}
+
+.personasSelect .form-control {
+    border-radius: 0px;
+    height: 46px;
+    border: 0px;
+}
+
+.personasSelect .btn {
+    border-width: 0px;
+    padding: 6px 20px;
+}
+
+.personasSelect button:before {
+   content: "\e678";
+   font-family: 'Linearicons';
+   left: 0;
+   position: absolute;
 }

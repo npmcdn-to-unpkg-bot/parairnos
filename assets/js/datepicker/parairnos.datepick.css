@@ -176,7 +176,7 @@ button.datepick-cmd {
 .datepick-month a {
 	display: block;
 	width: 100%;
-	padding: 0.45em 0em;
+	padding: 0.45em;
 	background-color: #dfeffc;
 	color: #000;
 	text-decoration: none;
