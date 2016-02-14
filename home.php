@@ -28,8 +28,9 @@ include("header.php");
                   <!-- /Calendario hasta-->
                   <div class="input-group-btn hidden-sm hidden-xs">
                      <button type="button" class="btn btn-personas" data-toggle="dropdown" tabindex="-1">
-                     <span data-bind="bs-drp-sel-label">Personas</span>
-                     <input type="hidden" name="country_path" data-bind="bs-drp-sel-value" value="us">
+                     
+                     <span data-bind="bs-drp-sel-label"><i class="ico icon-user"></i>&nbsp; Personas</span>
+                     <input type="hidden">
                      <span class="caret"></span>
                      </button>
                      <ul class="dropdown-menu" role="menu">
@@ -73,7 +74,7 @@ include("header.php");
                   <div class="row">
                      <div class="col-md-5">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200" alt="..."/>
+                           <img src="assets/img/hotel2/shot.jpg" alt="..."/>
                         </div>
                         <span class="destacado-ad">
                            <span class="label label-warning label-fill">Destacado</span>
@@ -108,7 +109,7 @@ include("header.php");
                   <div class="row">
                      <div class="col-md-5">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200" alt="..."/>
+                           <img src="assets/img/hotel1/shot.jpg" alt="..."/>
                         </div>
                         <span class="destacado-ad">
                            <span class="label label-warning label-fill">Destacado</span>
@@ -142,7 +143,7 @@ include("header.php");
                   <div class="row">
                      <div class="col-md-5">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200" alt="..."/>
+                           <img src="assets/img/hotel3/shot.jpg" alt="..."/>
                         </div>
                         <span class="destacado-ad">
                            <span class="label label-warning label-fill">Destacado</span>
@@ -176,7 +177,7 @@ include("header.php");
                   <div class="row">
                      <div class="col-md-5">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200" alt="..."/>
+                           <img src="assets/img/hotel4/shot.jpg" alt="..."/>
                         </div>
                         <span class="destacado-ad">
                            <span class="label label-warning label-fill">Destacado</span>
@@ -219,7 +220,7 @@ include("header.php");
                   <div class="col-md-4 col-sm-4">
                      <div class="card card-background">
                         <div class="image zoom-over">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=400x400&w=400&h=400"/>
+                           <img src="assets/img/chile/santiago.jpg"/>
                            <div class="filter"></div>
                         </div>
                         <div class="content">
@@ -244,7 +245,7 @@ include("header.php");
                   <div class="col-md-4 col-sm-4">
                      <div class="card card-background">
                         <div class="image zoom-over">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=400x400&w=400&h=400"/>
+                           <img src="assets/img/chile/patagonia.jpg"/>
                            <div class="filter"></div>
                         </div>
                         <div class="content">
@@ -270,7 +271,7 @@ include("header.php");
                   <div class="col-md-4 col-sm-4">
                      <div class="card card-background">
                         <div class="image zoom-over">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=400x400&w=400&h=400"/>
+                           <img src="assets/img/chile/litoral.jpg"/>
                            <div class="filter"></div>
                         </div>
                         <div class="content">
@@ -295,7 +296,7 @@ include("header.php");
                   <div class="col-md-4 col-sm-4">
                      <div class="card card-background">
                         <div class="image zoom-over">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=400x400&w=400&h=400"/>
+                           <img src="assets/img/chile/norte.jpg"/>
                            <div class="filter"></div>
                         </div>
                         <div class="content">
@@ -323,7 +324,7 @@ include("header.php");
                   <div class="col-md-4 col-sm-4">
                      <div class="card card-background">
                         <div class="image zoom-over">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=400x400&w=400&h=400"/>
+                           <img src="assets/img/chile/sur.jpg"/>
                            <div class="filter"></div>
                         </div>
                         <div class="content">
@@ -349,7 +350,7 @@ include("header.php");
                   <div class="col-md-4 col-sm-4">
                      <div class="card card-background">
                         <div class="image zoom-over">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=400x400&w=400&h=400"/>
+                           <img src="assets/img/chile/araucania.jpg"/>
                            <div class="filter"></div>
                         </div>
                         <div class="content">
