@@ -7,7 +7,6 @@
    }
    .wz-nav-off > li a {
    -moz-user-select: none;
-   cursor: default !important;
    }
    .wz-icon-inline li > a .ico-wrap {
    color: inherit;
@@ -95,7 +94,7 @@
    padding: 12px;
    }
    .wz-steps li .wz-desc {
-   opacity: 0;
+   opacity: 0.5;
    transition: opacity 0.5s ease 0s;
    }
    .wz-steps li:not(.active) .wz-icon {

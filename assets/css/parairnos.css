@@ -462,7 +462,7 @@
 .product-details .card .content h4 {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .product-page .product-details {
@@ -477,8 +477,8 @@
     font-size: 30px;
 }
 
-.product-page .price span {
-    display: block;
+.price span {
+    /*display: block;*/
     height: 40px;
 }
 
@@ -806,7 +806,7 @@
 
 .amenities span {
     font-size: 29px;
-    margin-right: 20px;
+    margin-right: 10px;
     vertical-align: middle;
     color: #bbb;
 }
@@ -862,12 +862,17 @@
 }
 
 .card-refine .badge {
-    background-color: #aaa;
+    background-color: #EEE;
+    color: #999;
 }
 
 .card-refine .checkbox {
     padding-left: 28px;
 }
+.card-refine .checkbox:hover {
+    cursor: pointer;
+}
+
 
 .parairnos-page {
     background: #3472F7;
@@ -1350,7 +1355,7 @@ sup {
 .home .parallax {
     background-size: auto; 
     background-position: top center; 
-    background-image: url('https://placeholdit.imgix.net/~text?txtsize=33&txt=1920x700&w=1970&h=700');
+    background-image: url('../img/header.jpg');
 }
 
 .ordernarPor .btn {
@@ -2805,15 +2810,59 @@ sup {
 }
 
 .cal-ocupacional .datepick-month td a {
-    background-color: #05AE0E;
-    color: #FFF;
+    background-color: #FFF;
+    color: #4e707d;
 }
 
 .cal-ocupacional .datepick-month td .datepick-selected {
-    background-color: #EC6A5A;
-    text-decoration: line-through;
+    background-color: #FFD2CA;
+    color: #A55555 !important;
+    /*text-decoration: line-through;*/
 }
 
+pre.prettyprint {
+    padding: 10px 20px 0px 20px !important;
+    border: 1px solid #FFF !important;
+}
+
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 0;
+  border-radius: 15px;
+  opacity: 0.5 !important;
+  border: none;
+}
+.btn-circle.btn-lg {
+    width: 40px;
+    height: 40px;
+    padding: 6px 10px;
+    font-size: 16px;
+    line-height: 1.33;
+    border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 150px;
+  height: 150px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 100px;
+}
+
+
+.description-phone {
+background-image: url(../img/phone.png); 
+display: inline-block; 
+background-repeat: no-repeat; 
+background-size: 32px 24px; 
+height: 24px; 
+padding-left: 30px; width: 34px;
+}
 
 /* Correo */
 
@@ -3511,7 +3560,7 @@ ul.nav-wizard.nav-wizard-backnav .active ~ li a:focus {
 }
 
 .register-page {
-    background: url("https://placeholdit.imgix.net/~text?txtsize=33&txt=1920x700&w=1920&h=700") no-repeat center center fixed;
+    background: url("../img/header2.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -3526,7 +3575,7 @@ ul.nav-wizard.nav-wizard-backnav .active ~ li a:focus {
 }
 
 .login-page {
-    background: url("https://placeholdit.imgix.net/~text?txtsize=33&txt=1920x700&w=1920&h=700") no-repeat center center fixed;
+    background: url("../img/login-img.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -3885,4 +3934,151 @@ a.menu-link:hover {
   #menu li a {
     border: 0;
   }
+}
+
+/* Place Holder CSS */
+.calendar ::-webkit-input-placeholder, .contact-form ::-webkit-input-placeholder{
+  color: #000;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+.calendar :-moz-placeholder, .contact-form :focus:-moz-placeholder {
+  color: #000;
+  opacity: 0.5;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+.calendar ::-moz-placeholder, .contact-form  :focus:-moz-placeholder{
+  color: #000;
+  opacity: 0.5;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+.calendar :-ms-input-placeholder, .contact-form :-ms-input-placeholder{  
+  color: #000;
+  opacity: 0.5;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+.calendar :hover::-webkit-input-placeholder, .contact-form ::-webkit-input-placeholder{
+  opacity: 0.75;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+.calendar :hover:-moz-placeholder, .contact-form  :focus:-moz-placeholder{
+  opacity: 0.75;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+.calendar :hover::-moz-placeholder, .contact-form :hover::-moz-placeholder{
+  opacity: 0.75;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+.calendar :hover:-ms-input-placeholder, .contact-form :hover:-ms-input-placeholder{  
+  opacity: 0.75;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+.calendar :focus::-webkit-input-placeholder, .contact-form ::-webkit-input-placeholder 
+  opacity: 0;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+.calendar :focus:-moz-placeholder, .contact-form  :focus:-moz-placeholder{
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+.calendar :focus::-moz-placeholder, .contact-form :focus::-moz-placeholder{
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+.calendar :focus:-ms-input-placeholder, .contact-form :focus:-ms-input-placeholder{  
+  opacity: 0;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+.status {
+  display: block;
+  float: left;
+  width: 3.2em;
+  height: 3.2em;
+  font-size: 0.6em;
+}
+
+.status-Available {
+  background-color: #fff;
+  border:1px solid #ccc;
+  position: relative;
+}
+
+.status-Booked {
+  background-color: #ffd2ca;
+  color: #a7a085;
+}
+
+.status-Morning {
+  background-color: #FFD2CA;
+  position: relative;
+}
+.status-Morning:before {
+  width: 0;
+  height: 0;
+  border-bottom: 3.2em solid transparent;
+  border-top: 0em solid transparent;
+  border-left: 3.2em solid #EAEAEA;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.status-Afternoon {
+  background-color: #FFD2CA;
+  position: relative;
+}
+.status-Afternoon:before {
+  width: 0;
+  height: 0;
+  border-top: 3.2em solid transparent;
+  border-bottom: 0em solid transparent;
+  border-right: 3.2em solid #EAEAEA;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.users-rating {
+    margin-right: 10px;
+}
+
+
+.calendar-table span {
+  position: relative;
+  z-index: 1;
+  margin-right: 10px;
+}
+
+.calendar-table {
+  margin-top: 20px;
+}
+
+.calendar-table .key {
+  padding: 0px;
+  border-top: none !important;
+}
+
+.calendar-table .key p {
+  margin-bottom: 20px;
 }
