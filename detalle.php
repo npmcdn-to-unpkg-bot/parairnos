@@ -220,7 +220,7 @@
                      </div>
                      <div class="form-group">
                         <label for="message">Consulta</label>
-                        <textarea name="message" class="form-control" id="message" rows="1"></textarea>
+                        <textarea name="message" class="form-control" id="message" rows="3"></textarea>
                      </div>
                      <div class="submit">
                         <input id="successBtn" onclick="return false;" data-toggle="morphing" data-rotation-color="azure" type="submit" class="btn btn-block btn-lg btn-info btn-fill" value="Enviar consulta" />   
@@ -229,6 +229,16 @@
                </div>
             </div>
             <!-- /Formulario -->
+            <!-- Mapa de propiedad -->
+            <div class="card">
+               <div class="header header-map">
+                  <!-- Ubicación -->
+                  <p class="ubicacion"><span class="fa fa-map-marker"></span>Avenida San Martin, Viña del Mar (<a href="#myMapModal" data-toggle="modal" title="Ver en el mapa">ver en el mapa</a>) </p>
+                  <!-- /Ubicación -->
+               </div>
+               <div class="map" id="map"></div>
+            </div>
+            <!-- /Mapa de propiedad -->
             <!-- Datos de usuario -->
             <div class="card card-user">
                <div class="content">
@@ -251,20 +261,6 @@
                </div>
             </div>
             <!-- /Datos de usuario -->
-            <!-- Mapa de propiedad -->
-            <div class="card">
-
-               <div class="header header-map">
-                  <!-- Ubicación -->
-                  <p class="ubicacion"><span class="fa fa-map-marker"></span>Avenida San Martin, Viña del Mar (<a href="#myMapModal" data-toggle="modal" title="Ver en el mapa">ver en el mapa</a>) </p>
-                  <!-- /Ubicación -->
-               </div>
-               
-               <div class="map" id="map"></div>
-               
-               
-            </div>
-            <!-- /Mapa de propiedad -->
          </aside>
          <!-- Sidebar derecha -->
       </div>
