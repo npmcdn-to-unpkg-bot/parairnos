@@ -56,7 +56,8 @@ include("header-admin.php");
                <!-- Menu sidebar -->
                <div class="sidebar-offcanvas card" id="admin-sidebar" role="navigation">
                   <div class="list-group">
-                     <a href="#" class="list-group-item selected"><i class="fa fa-map-marker"></i>
+                     <a href="#" class="list-group-item selected">
+                     <i class="fa fa-map-marker"></i>
                      Todas mis publicaciones</a>
                      <a href="#" class="list-group-item"> <i class="fa fa-check"></i>
                      Avisos publicados</a>
@@ -119,7 +120,7 @@ include("header-admin.php");
                <!-- /Alerta fracaso -->
                <!-- Filtro Publicaciones -->
                <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-3 col-md-offset-9">
                      <form class="form-inline">
                         <div class="form-group">
                            <select name="huge" class="selectpicker ordernarPor">
@@ -133,8 +134,6 @@ include("header-admin.php");
                </div>
                <!-- /Filtro Publicaciones -->
                <div class="clearfix"></div>
-               <br>
-               <div class="clearfix"></div>
                <!-- Publicaciones destacadas -->
                <h4>3 Publicaciones destacadas:</h4>
                <div class="card">
@@ -144,7 +143,7 @@ include("header-admin.php");
                            <div class="col-xs-12 col-md-9 col-sm-9 media">
                               <a class="pull-left leftImgCard" href="#">
                                  <span class="label label-danger label-fill">Pausado</span>
-                                 <img width="150" height="150" class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=300x300&w=300&h=300">
+                                 <img width="150" height="150" class="media-object" src="assets/img/hotel1/shot.jpg">
                               </a>
                               <div class="content">
                                  <a class="card-link" href="detalle.php">
@@ -169,18 +168,10 @@ include("header-admin.php");
                                  <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                                  </div>
                               </div>
-                              <div class="dropdown" style="margin-bottom: 5px">
-                                 <button class="btn-block btn-fill btn btn-sm btn-default dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-pencil"></i> Editar
-                                 <span class="caret"></span></button>
-                                 <ul class="dropdown-menu">
-                                    <li><a href="#"><i class="fa fa-play"></i> Publicar</a></li>
-                                    <li><a href="wizard.php"><i class="fa fa-pencil"></i> Editar publicación</a></li>
-                                    <li><a href="#"><i class="fa fa-remove"></i> Borrar</a></li>
-                                 </ul>
-                              </div>
-                              <a href="calendario.php" class="btn btn-block btn-fill btn-sm btn-primary">
-                                 <span class="fa fa-calendar"></span> Calendario
-                              </a>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-play"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-calendar"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-pencil"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-remove"></i></button>
                            </div>
                         </div>
                         <div class="row">
@@ -229,7 +220,7 @@ include("header-admin.php");
                         <div class="row">
                            <div class="col-xs-12 col-md-9 col-sm-9 media">
                               <a class="pull-left" href="#">
-                                 <img width="150" height="150" class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=300x300&w=300&h=300">
+                                 <img width="150" height="150" class="media-object" src="assets/img/hotel2/shot.jpg">
                               </a>
                               <div class="content">
                                  <a class="card-link" href="detalle.php">
@@ -253,18 +244,10 @@ include("header-admin.php");
                                  <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
                                  </div>
                               </div>
-                              <div class="dropdown" style="margin-bottom: 5px">
-                                 <button class="btn-block btn-fill btn btn-sm btn-default dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-pencil"></i> Editar
-                                 <span class="caret"></span></button>
-                                 <ul class="dropdown-menu">
-                                    <li><a href="#"><i class="fa fa-pause"></i> Pausar</a></li>
-                                    <li><a href="wizard.php"><i class="fa fa-pencil"></i> Editar publicación</a></li>
-                                    <li><a href="#"><i class="fa fa-remove"></i> Borrar</a></li>
-                                 </ul>
-                              </div>
-                              <a href="calendario.php" class="btn btn-block btn-fill btn-sm btn-primary">
-                                 <span class="fa fa-calendar"></span> Calendario
-                              </a>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-pause"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-calendar"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-pencil"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-remove"></i></button>
                            </div>
                         </div>
                         <div class="row">
@@ -313,7 +296,7 @@ include("header-admin.php");
                         <div class="row">
                            <div class="col-xs-12 col-md-9 col-sm-9 media">
                               <a class="pull-left" href="#">
-                                 <img width="150" height="150" class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=300x300&w=300&h=300">
+                                 <img width="150" height="150" class="media-object" src="assets/img/hotel3/shot.jpg">
                               </a>
                               <div class="content">
                                  <a class="card-link" href="detalle.php">
@@ -338,18 +321,10 @@ include("header-admin.php");
                                  <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
                                  </div>
                               </div>
-                              <div class="dropdown" style="margin-bottom: 5px">
-                                 <button class="btn-block btn-fill btn btn-sm btn-default dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-pencil"></i> Editar
-                                 <span class="caret"></span></button>
-                                 <ul class="dropdown-menu">
-                                    <li><a href="#"><i class="fa fa-pause"></i> Pausar</a></li>
-                                    <li><a href="wizard.php"><i class="fa fa-pencil"></i> Editar publicación</a></li>
-                                    <li><a href="#"><i class="fa fa-remove"></i> Borrar</a></li>
-                                 </ul>
-                              </div>
-                              <a href="calendario.php" class="btn btn-block btn-fill btn-sm btn-primary">
-                                 <span class="fa fa-calendar"></span> Calendario
-                              </a>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-pause"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-calendar"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-pencil"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-remove"></i></button>
                            </div>
                         </div>
                         <div class="row">
@@ -404,7 +379,7 @@ include("header-admin.php");
                            <div class="col-xs-12 col-md-9 col-sm-9 media">
                               <a class="pull-left leftImgCard" href="#">
                                  <span class="label label-danger label-fill">Pausado</span>
-                                 <img width="150" height="150" class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=300x300&w=300&h=300">
+                                 <img width="150" height="150" class="media-object" src="assets/img/hotel4/shot.jpg">
                               </a>
                               <div class="content">
                                  <a class="card-link" href="detalle.php">
@@ -429,17 +404,12 @@ include("header-admin.php");
                                  <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                                  </div>
                               </div>
-                              <div class="dropdown" style="margin-bottom: 5px">
-                                 <button class="btn-block btn-fill btn btn-sm btn-default dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-pencil"></i> Editar
-                                 <span class="caret"></span></button>
-                                 <ul class="dropdown-menu">
-                                    <li><a href="#"><i class="fa fa-play"></i> Publicar</a></li>
-                                    <li><a href="wizard.php"><i class="fa fa-pencil"></i> Editar publicación</a></li>
-                                    <li><a href="#"><i class="fa fa-remove"></i> Borrar</a></li>
-                                 </ul>
-                              </div>
-                              <a href="calendario.php" class="btn btn-block btn-fill btn-sm btn-primary">
-                                 <span class="fa fa-calendar"></span> Calendario
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-play"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-calendar"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-pencil"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-remove"></i></button>
+                              <a href="wizard.php#tab5" style="margin-top:15px" class="btn btn-block btn-fill btn-md btn-primary">
+                                 Destacar
                               </a>
                            </div>
                         </div>
@@ -490,7 +460,7 @@ include("header-admin.php");
                            <div class="col-xs-12 col-md-9 col-sm-9 media">
                               <a class="pull-left leftImgCard" href="#">
                                  <span class="label label-danger label-fill">Pausado</span>
-                                 <img width="150" height="150" class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=300x300&w=300&h=300">
+                                 <img width="150" height="150" class="media-object" src="assets/img/hotel1/3.jpg">
                               </a>
                               <div class="content">
                                  <a class="card-link" href="detalle.php">
@@ -514,17 +484,12 @@ include("header-admin.php");
                                  <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
                                  </div>
                               </div>
-                              <div class="dropdown" style="margin-bottom: 5px">
-                                 <button class="btn-block btn-fill btn btn-sm btn-default dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-pencil"></i> Editar
-                                 <span class="caret"></span></button>
-                                 <ul class="dropdown-menu">
-                                    <li><a href="#"><i class="fa fa-play"></i> Publicar</a></li>
-                                    <li><a href="wizard.php"><i class="fa fa-pencil"></i> Editar publicación</a></li>
-                                    <li><a href="#"><i class="fa fa-remove"></i> Borrar</a></li>
-                                 </ul>
-                              </div>
-                              <a href="calendario.php" class="btn btn-block btn-fill btn-sm btn-primary">
-                                 <span class="fa fa-calendar"></span> Calendario
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-play"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-calendar"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-pencil"></i></button>
+                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-remove"></i></button>
+                              <a href="wizard.php#tab5" style="margin-top:15px" class="btn btn-block btn-fill btn-md btn-primary">
+                                 Destacar
                               </a>
                            </div>
                         </div>
