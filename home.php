@@ -26,28 +26,22 @@ include("header.php");
                      </div>
                   </span>
                   <!-- /Calendario hasta-->
-                  <div class="input-group-btn hidden-sm hidden-xs">
-                     <button type="button" class="btn btn-personas" data-toggle="dropdown" tabindex="-1">
-                     
-                     <span data-bind="bs-drp-sel-label"><i class="ico icon-user"></i>&nbsp; Personas</span>
-                     <input type="hidden">
-                     <span class="caret"></span>
-                     </button>
-                     <ul class="dropdown-menu" role="menu">
-                        <!-- Loop -->
-                        <li><a href="#">1 persona</a></li>
-                        <li><a href="#">2 personas</a></li>
-                        <li><a href="#">3 personas</a></li>
-                        <li><a href="#">4 personas</a></li>
-                        <li><a href="#">5 personas</a></li>
-                        <li><a href="#">6 personas</a></li>
-                        <li><a href="#">7 personas</a></li>
-                        <li><a href="#">8 personas</a></li>
-                        <li><a href="#">9 personas</a></li>
-                        <li><a href="#">10 personas</a></li>
-                        <!-- END Loop -->
-                     </ul>
+                  <!-- Selector de personas -->
+                  <div class="input-group-btn hidden-sm hidden-xs personasSelect">
+                     <div class="form-group">
+                       <select data-width="120px" title="Personas" class="form-control selectpicker" id="personas">
+                         <option data-hidden="true">Personas</option>
+                         <option value="1" >1 persona</option>
+                         <option value="2" >2 personas</option>
+                         <option value="3" >3 personas</option>
+                         <option value="4" >4 personas</option>
+                         <option value="5" >4 personas</option>
+                         <option value="6" >5 personas</option>
+                         <option value="7" >6 personas</option>
+                       </select>
+                     </div>
                   </div>
+                  <!-- /Selector de personas --> 
                   <span class="input-group-btn">
                      <button class="btn btn-fill btn-primary" type="button"><span class="fa fa-search"></span> <span class="hidden-xs hidden-sm">Buscar</span></button>
                   </span>
