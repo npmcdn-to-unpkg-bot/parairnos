@@ -90,7 +90,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>     
+                           <img src="assets/img/hotel1/shot.jpg"/>     
                         </div>
                         <div class="destacado-ad">
                         <span class="label label-warning label-fill">Destacado</span>
@@ -135,7 +135,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>     
+                           <img src="assets/img/hotel2/shot.jpg"/>     
                         </div>
                         <div class="destacado-ad">
                         <span class="label label-warning label-fill">Destacado</span>
@@ -180,7 +180,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>     
+                           <img src="assets/img/hotel3/shot.jpg"/>     
                         </div>
                         <div class="destacado-ad">
                         <span class="label label-warning label-fill">Destacado</span>
@@ -225,7 +225,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>
+                           <img src="assets/img/hotel4/shot.jpg"/>
                         </div>
                         <div class="destacado-ad">
                         <span class="label label-warning label-fill">Destacado</span>
@@ -268,7 +268,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>
+                           <img src="assets/img/hotel1/shot.jpg"/>
                         </div>
                         <div class="destacado-ad">
                         <span class="label label-warning label-fill">Destacado</span>
@@ -312,7 +312,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>     
+                           <img src="assets/img/hotel2/shot.jpg"/>     
                         </div>
                      </div>
                      <div class="col-lg-7 col-md-6">
@@ -353,7 +353,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>  
+                           <img src="assets/img/hotel3/shot.jpg"/>  
                         </div>
                      </div>
                      <div class="col-lg-7 col-md-6">
@@ -394,7 +394,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>
+                           <img src="assets/img/hotel4/shot.jpg"/>
                         </div>
                      </div>
                      <div class="col-lg-7 col-md-6">
@@ -434,7 +434,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>
+                           <img src="assets/img/hotel1/shot.jpg"/>
                         </div>
                      </div>
                      <div class="col-lg-7 col-md-6">
@@ -475,7 +475,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>    
+                           <img src="assets/img/hotel2/shot.jpg"/>    
                         </div>
                      </div>
                      <div class="col-lg-7 col-md-6">
@@ -516,7 +516,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>     
+                           <img src="assets/img/hotel3/shot.jpg"/>     
                         </div>
                      </div>
                      <div class="col-lg-7 col-md-6">
@@ -557,7 +557,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>
+                           <img src="assets/img/hotel4/shot.jpg"/>
                         </div>
                      </div>
                      <div class="col-lg-7 col-md-6">
@@ -597,7 +597,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>
+                           <img src="assets/img/hotel1/shot.jpg"/>
                         </div>
                      </div>
                      <div class="col-lg-7 col-md-6">
@@ -638,7 +638,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>     
+                           <img src="assets/img/hotel2/shot.jpg"/>     
                         </div>
                      </div>
                      <div class="col-lg-7 col-md-6">
@@ -679,7 +679,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>     
+                           <img src="assets/img/hotel3/shot.jpg"/>     
                         </div>
                      </div>
                      <div class="col-lg-7 col-md-6">
@@ -720,7 +720,7 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3">
                         <div class="image">
-                           <img src="https://placeholdit.imgix.net/~text?txtsize=34&txt=250x200&w=250&h=200"/>
+                           <img src="assets/img/hotel4/shot.jpg"/>
                         </div>
                      </div>
                      <div class="col-lg-7 col-md-6">
