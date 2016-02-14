@@ -164,18 +164,30 @@ include("header-admin.php");
                   Calendario de reservas
                   </h4>
                </div>
-               <div class="col-md-6">
-                  <div class="pull-right">
-                     <div class="label label-lg label-danger label-fill">Reservado</div>
-                     <div class="label label-lg label-success label-fill">Disponible</div>
-                  </div>
-               </div>
                <div class="clearfix"></div>
                <!-- Calendario de reservas -->
                <div class="col-md-12">
                   <div id="calendario-ocupacional-admin"></div>
                </div>
                <!-- /Calendario de reservas -->
+               <div class="col-md-4">
+                  <div class="table-responsive">
+                                       <table class="table calendar-table">
+                                            <tbody>
+                                              <tr>
+                                                <td colspan="3" class="key">
+                                                  <p><span class="status-Available status"></span> Disponible</p>
+                                                  <p><span class="status-Booked status"></span> Reservado</p>
+                                                </td>
+                                                <td colspan="4" class="key">
+                                                  <p><span class="status-Morning status"></span> Entrada</p>
+                                                  <p><span class="status-Afternoon status"></span> Salida</p>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                       </table>
+                                    </div>
+               </div>
                <div class="col-md-8">
                   <!-- Código compartir calendario -->
                   <p>
@@ -183,9 +195,8 @@ include("header-admin.php");
                      Para mostrar el calendario en su propia pagina, puede usar el codigo siguiente:
                      </h4>
                   </p>
-                                    <pre class="prettyprint">&lt;iframe src="http://www.parairnos.com/iframeCalendario/19018" 
-                                             frameBorder="0" width="521" height="256" scrolling="no">
-                                             &lt;/iframe>
+                  <pre class="prettyprint">&lt;iframe src="http://www.parairnos.com/iframeCalendario/19018" frameBorder="0" width="521" 
+height="256" scrolling="no">&lt;/iframe>
                   </pre>
                   <!-- Código compartir calendario -->
                </div>
