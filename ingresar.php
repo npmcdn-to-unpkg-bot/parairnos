@@ -1,8 +1,6 @@
-<!-- Header -->
 <?php
 include("header.php");
 ?>
-<!-- /Header -->
 
 <!-- Ingresar a mi cuenta -->
 <div class="product-page">
@@ -15,12 +13,20 @@ include("header.php");
               <h4>Ingresar a mi cuenta</h4>
               <hr>
               <div class="form-group">
-                <input type="email" tabindex="1" placeholder="Email" class="form-control input-lg" id="email" name="email">
+                     <div class="left-inner-addon">
+                        <i class="ico icon-envelope"></i>
+                        <input data-error="Bruh, la dirección de correo es inválida" required type="email" tabindex="1" placeholder="Email (*)" class="form-control input-md" id="email" name="email">
+                     </div>
+                     <div class="help-block with-errors fade in"></div>
               </div>
               
               <div class="form-group">
-                 <input type="password" tabindex="2" placeholder="Contraseña" class="form-control input-lg" id="password" name="password">
-              </div>
+                     <div class="left-inner-addon">
+                        <i class="ico icon-lock"></i>
+                        <input data-error="Contraseña incorrecta" required data-minlength="6" type="password" tabindex="2" placeholder="Contraseña" class="form-control input-md" id="password" name="password">
+                     </div>
+                     <span class="help-block with-errors fade in"></span>
+                  </div>
 
               <label class="checkbox pull-left" for="checkbox1">
                  <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
@@ -29,9 +35,14 @@ include("header.php");
               <div class="clearfix"></div>
 
               <hr>
+              
+
               <div class="row">
-                <div class="col-md-12"><a href="admin.php" class="btn btn-primary btn-block btn-lg btn-fill" href="#">Ingresar a mi cuenta</a></div>
+                     <div class="col-xs-12">
+                        <button class="btn btn-primary btn-block btn-lg btn-fill" type="submit">Ingresar a mi cuenta</button>
+                     </div>
               </div>
+                  
                 <br>
                 <p class="text-center"><a href="#" title="Forgot password">
                     ¿Olvidaste tu contraseña?</a>
