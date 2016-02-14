@@ -34,11 +34,11 @@
                </div>
                <div class="panel-body">
                   <label class="checkbox">
-                  <input checked="" type="checkbox" value="" data-toggle="checkbox" checked="">
+                  <input checked type="checkbox" value="" data-toggle="checkbox">
                   Entre $ 0 y $ 300 <span class="badge pull-right">1465</span>
                   </label>
                   <label class="checkbox">
-                  <input checked="" type="checkbox" value="" data-toggle="checkbox">
+                  <input checked type="checkbox" value="" data-toggle="checkbox">
                   Entre $ 300 y $ 600 <span class="badge pull-right">645</span>
                   </label>
                   <label class="checkbox">
@@ -66,11 +66,11 @@
             <div id="TipoDePropiedad" class="panel-collapse collapse">
                <div class="panel-body">
                   <label class="checkbox">
-                  <input checked="" type="checkbox" value="" data-toggle="checkbox" checked="">
+                  <input type="checkbox" value="" data-toggle="checkbox">
                   Casa en arriendo <span class="badge pull-right">14</span>
                   </label>
                   <label class="checkbox">
-                  <input checked="" type="checkbox" value="" data-toggle="checkbox">
+                  <input type="checkbox" value="" data-toggle="checkbox">
                   Departamento en arriendo <span class="badge pull-right">6</span>
                   </label>
                   <label class="checkbox">
@@ -98,11 +98,11 @@
             <div id="caracteristicas" class="panel-collapse collapse in">
                <div class="panel-body">
                   <label class="checkbox">
-                  <input checked type="checkbox" value="" data-toggle="checkbox" checked="">
+                  <input type="checkbox" value="" data-toggle="checkbox">
                   Aire acondicionado <span class="badge pull-right">14</span>
                   </label>
                   <label class="checkbox">
-                  <input type="checkbox" value="" data-toggle="checkbox" checked="">
+                  <input type="checkbox" value="" data-toggle="checkbox">
                   Calefacción <span class="badge pull-right">68</span>
                   </label>
                   <label class="checkbox">
