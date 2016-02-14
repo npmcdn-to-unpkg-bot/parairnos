@@ -83,10 +83,12 @@
                            </div>
                            <!-- Slider anuncio -->
                            <div class="gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "cellAlign": "left", "wrapAround": true, "autoPlay": true }'>
-                              <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=300x300&w=300&h=300"/>
-                              <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=300x300&w=300&h=300"/>
-                              <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=300x300&w=300&h=300"/>
-                              <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=300x300&w=300&h=300"/>
+                              <img src="assets/img/hotel1/1.jpg"/>
+                              <img src="assets/img/hotel1/2.jpg"/>
+                              <img src="assets/img/hotel1/3.jpg"/>
+                              <img src="assets/img/hotel1/4.jpg"/>
+                              <img src="assets/img/hotel1/5.jpg"/>
+                              <img src="assets/img/hotel1/6.jpg"/>
                            </div>
                            <!-- /Slider anuncio -->
                            <div class="content">
@@ -96,7 +98,7 @@
                                        <!-- Datos básicos -->
                                        <div class="col-md-4">
                                           <h4>Datos básicos</h4>
-                                          <div class="amenities-divider"></div>
+         
                                           <ul class="list-unstyled amenities">
                                              <li> <span class="parairnos-icon icono-125"></span> 3 Habitaciones</li>
                                              <li> <span class="parairnos-icon icono-008"></span> 2 Baños</li>
@@ -107,7 +109,7 @@
                                        <!-- Características -->
                                        <div class="col-md-8">
                                           <h4>Características</h4>
-                                          <div class="amenities-divider"></div>
+         
                                           <div class="row">
                                              <div class="">
                                                 <div class="col-md-5 col-sm-6 col-xs-6">
@@ -134,7 +136,6 @@
                               <br>
                               <!-- Descripción -->
                               <h4>Descripción</h4>
-                              <div class="amenities-divider"></div>
                               <p>El departamento está ubicado en Avenida del Mar 1700, edificio Neohaus, en el segundo piso. Consta de 2 dormitorios y 2 baños, con vista fronto-lateral al mar. Es para 5 personas, no se aceptan mascotas. Tiene Wi-Fi, TV cable, equipo de música, microondas, juguera, hervidor, cafetera, tostadora, lavadora, aspiradora. Cuenta con un estacionamiento Hay piscina al aire libre, quinchos, gimnasio, cancha de baby futbol o Tennis, sauna. Conserjería las 24 horas. Valores: Desde el 24 de Diciembre de 2015 hasta el 29 de Febrero 2016, USD$130 diarios o $90.000 Desde el 1ero al 14 de Marzo de 2016, USD$100 diarios o $70.000 Temporada baja, EXCEPTO fines de semana largos, vacaciones de invierno y Fiestas Patrias USD$80 diarios o $55.000 diarios. Consulte por mail, o al teléfono +56998216979 o si prefiere a teléfono fijo, (0056) 22 2911693 </p>
                               <p><strong>Última actualización:</strong> 03/11/2011 </p>
                               <!-- /Descripción -->
@@ -152,10 +153,23 @@
                                  <div class="col-md-12 ">
                                     <div id="calendario-ocupacional"></div>
                                  </div>
-                                 <div class="col-md-12">
-                                    <br>
-                                    <div class="label label-lg label-danger label-fill">Reservado</div>
-                                    <div class="label label-lg label-success label-fill">Disponible</div>
+                                 <div class="col-md-6">
+                                    <div class="table-responsive">
+                                       <table class="table calendar-table">
+                                            <tbody>
+                                              <tr>
+                                                <td colspan="3" class="key">
+                                                  <p><span class="status-Available status"></span> Disponible</p>
+                                                  <p><span class="status-Booked status"></span> Reservado</p>
+                                                </td>
+                                                <td colspan="4" class="key">
+                                                  <p><span class="status-Morning status"></span> Entrada</p>
+                                                  <p><span class="status-Afternoon status"></span> Salida</p>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                       </table>
+                                    </div>
                                  </div>
                               </div>
                            </div>
@@ -227,7 +241,7 @@
                            <small>Propietario</small>
                         </h4>
                         <p class="description">
-                        <div style="background-image: url(assets/img/phone.png); display: inline-block; background-repeat: no-repeat; background-size: 32px 24px; height: 24px; padding-left: 30px; width: 34px;">
+                        <div class="description-phone">
                         </div>
                         <a href="tel:56277596494" title="">+56 2 7759 6494 </a>
                         <br>
@@ -280,47 +294,67 @@
                   Basado en <span style="font-weight:bold">12</span> opiniones
                </div>
             </div>
-            <div class="col-sm-4 col-md-offset-5 AT3RevSummary text-center">
-               <div>
+
+            <div class="col-sm-4 pull-right">
+               <table>
+               <tbody>
+               <tr>
+               <td>
+               <div class="users-rating"> 
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
-                  <span stlye="font-weight:bold;">23</span> usuarios
                </div>
-               <div>
+               </td>
+               <td>23 usuarios</td>
+               </tr>
+               <tr>
+               <td>
+                  <div class="users-rating"> 
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star-o"></span>
-                  <span stlye="font-weight:bold;">22</span> usuarios
                </div>
-               <div>
+               </td>
+               <td>22 usuarios</td>
+               </tr>
+               <tr>
+               <td>
+                  <div class="users-rating"> 
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star-o"></span>
                   <span class="fa fa-star-o"></span>
-                  <span stlye="font-weight:bold;">16</span> usuarios
                </div>
-               <div>
+               </td>
+               <td>16 usuarios</td>
+               </tr><tr>
+               <td>
+                  <div class="users-rating"> 
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star-o"></span>
                   <span class="fa fa-star-o"></span>
                   <span class="fa fa-star-o"></span>
-                  <span stlye="font-weight:bold;">25</span> usuarios
                </div>
-               <div>
+               </td>
+               <td>32 usuarios</td></tr>
+               <tr><td>
+                  <div class="users-rating"> 
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star-o"></span>
                   <span class="fa fa-star-o"></span>
                   <span class="fa fa-star-o"></span>
                   <span class="fa fa-star-o"></span>
-                  <span stlye="font-weight:bold;">12</span> usuarios
                </div>
+               </td>
+               <td>11 usuarios</td></tr></tbody>
+               </table>
             </div>
             <div class="clearfix"></div>
          </div>
@@ -442,4 +476,3 @@
    </div>
    <!-- /.modal-dialog -->
 </div>
-<!-- /.modal -->
