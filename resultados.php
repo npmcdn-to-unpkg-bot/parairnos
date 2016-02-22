@@ -38,9 +38,9 @@
       </div>
       <div class="row">
          <div class="col-xs-6  col-md-6">
-            <button class="visible-xs visible-sm btn filtrarResultado js-toggle-offcanvas">
+            <a href="resultados.php" class="visible-xs visible-sm btn filtrarResultado js-toggle-offcanvas">
             Filtrar resultados
-            </button> 
+            </a> 
          </div>
          <div class="col-xs-6 col-md-6 hidden-lg hidden-md hidden-sm">
                   <form class="form-inline">
@@ -76,11 +76,16 @@
                         </div>
                      </div>
                      <div class="form-group">
-                        <select name="huge" class="selectpicker ordernarPor">
-                           <option disabled selected> Ordenar por</option>
-                           <option value="1">Fecha </option>
-                           <option value="1">Precio</option>
-                        </select>
+                        <div class="select dropdown pull-right ordernarPor">
+                          <button class="btn btn-default dropdown-toggle" type="button" id="ordenarPor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Ordenar por
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu dropdownOrdenar" aria-labelledby="ordenarPor">
+                            <li><a href="resultados.php">Fecha</a></li>
+                            <li><a href="resultados.php">Precio</a></li>
+                          </ul>
+                        </div>
                      </div>
                   </form>
                </div>
@@ -88,7 +93,7 @@
             <div class="results-content">
                <div class="card card-horizontal">
                   <div class="row">
-                     <div class="col-lg-3 col-md-3">
+                     <div class="col-md-3">
                         <div class="image">
                            <img src="assets/img/hotel1/shot.jpg"/>     
                         </div>
@@ -96,8 +101,8 @@
                         <span class="label label-warning label-fill">Destacado</span>
                         </div>
                      </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
+                     <div class="col-md-6">
+                        <div class="content card-top">
                            <a class="card-link" href="detalle.php">
                               <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
                            </a>
@@ -109,6 +114,18 @@
                               <i class="fa fa-star-o "></i>
                               <span class="review-total">(12)</span>
                            </p>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="price-content content text-right">
+                           <span class="price text-success"> 
+                           $ 22,000
+                           </span>
+                           <div class="price-sub">Por día</div>
+                        </div>
+                     </div>
+                     <div class="col-md-8 hidden-xs">
+                        <div class="content card-bottom">
                            <a class="card-link" href="detalle.php">
                               <p class="description hidden-xs">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
                            </a>
@@ -119,21 +136,12 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 22,000
-                           </span>
-                           <div class="price-sub">Por día</div>
-                           <!-- <img src="assets/img/destacado.png" alt=""> -->
-                        </div>
-                     </div>
                   </div>
                </div>
                <!-- termina tarjeta -->
                <div class="card card-horizontal">
                   <div class="row">
-                     <div class="col-lg-3 col-md-3">
+                     <div class="col-md-3">
                         <div class="image">
                            <img src="assets/img/hotel2/shot.jpg"/>     
                         </div>
@@ -141,8 +149,8 @@
                         <span class="label label-warning label-fill">Destacado</span>
                         </div>
                      </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
+                     <div class="col-md-6">
+                        <div class="content card-top">
                            <a class="card-link" href="detalle.php">
                               <h4 class="title text-info">Alojamiento en el Centro de Santiago departamentos 1 y 2 Dormitorios </h4>
                            </a>
@@ -154,6 +162,19 @@
                               <i class="fa fa-star-o "></i>
                               <span class="review-total">(12)</span>
                            </p>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="price-content content text-right">
+                           <span class="price text-success"> 
+                           $ 36,000
+                           </span>
+                           <div class="price-sub">Por día</div>
+                           <!-- <img src="assets/img/destacado.png" alt=""> -->
+                        </div>
+                     </div>
+                     <div class="col-md-8 hidden-xs">
+                        <div class="content card-bottom">
                            <a class="card-link" href="detalle.php">
                               <p class="description hidden-xs">Departamento en arriendo para 5 personas en Eleuterio Ramírez, Santiago, Santiago, Región Metropolitana, Chile</p>
                            </a>
@@ -164,21 +185,12 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 36,000
-                           </span>
-                           <div class="price-sub">Por día</div>
-                           <!-- <img src="assets/img/destacado.png" alt=""> -->
-                        </div>
-                     </div>
                   </div>
                </div>
                <!-- termina tarjeta -->
                <div class="card card-horizontal">
                   <div class="row">
-                     <div class="col-lg-3 col-md-3">
+                     <div class="col-md-3">
                         <div class="image">
                            <img src="assets/img/hotel3/shot.jpg"/>     
                         </div>
@@ -186,8 +198,8 @@
                         <span class="label label-warning label-fill">Destacado</span>
                         </div>
                      </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
+                     <div class="col-md-6">
+                        <div class="content card-top">
                            <a class="card-link" href="detalle.php">
                               <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
                            </a>
@@ -199,6 +211,19 @@
                               <i class="fa fa-star-o "></i>
                               <span class="review-total">(6)</span>
                            </p>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="price-content content text-right">
+                           <span class="price text-success"> 
+                           $ 22,000
+                           </span>
+                           <div class="price-sub">Por día</div>
+                           <!-- <img src="assets/img/destacado.png" alt=""> -->
+                        </div>
+                     </div>
+                     <div class="col-md-8 hidden-xs">
+                        <div class="content card-bottom">
                            <a class="card-link" href="detalle.php">
                               <p class="description hidden-xs">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
                            </a>
@@ -209,21 +234,12 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 22,000
-                           </span>
-                           <div class="price-sub">Por día</div>
-                           <!-- <img src="assets/img/destacado.png" alt=""> -->
-                        </div>
-                     </div>
                   </div>
                </div>
                <!-- termina tarjeta -->
                <div class="card card-horizontal">
                   <div class="row">
-                     <div class="col-lg-3 col-md-3">
+                     <div class="col-md-3">
                         <div class="image">
                            <img src="assets/img/hotel4/shot.jpg"/>
                         </div>
@@ -231,8 +247,8 @@
                         <span class="label label-warning label-fill">Destacado</span>
                         </div>
                      </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
+                     <div class="col-md-6">
+                        <div class="content card-top">
                            <a class="card-link" href="#">
                               <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
                            </a>
@@ -244,6 +260,17 @@
                               <i class="fa fa-star text-warning "></i>
                               <span class="review-total">(16)</span>
                            </p>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="price-content content text-right">
+                           <span class="price text-success"> 
+                           $ 22,000
+                           </span>
+                        </div>
+                     </div>
+                     <div class="col-md-8 hidden-xs">
+                        <div class="content card-bottom">
                            <a class="card-link" href="#">
                               <p class="description hidden-xs">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
                            </a>
@@ -254,19 +281,12 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 22,000
-                           </span>
-                        </div>
-                     </div>
                   </div>
                </div>
                <!-- termina tarjeta -->
                <div class="card card-horizontal">
                   <div class="row">
-                     <div class="col-lg-3 col-md-3">
+                     <div class="col-md-3">
                         <div class="image">
                            <img src="assets/img/hotel1/shot.jpg"/>
                         </div>
@@ -274,8 +294,8 @@
                         <span class="label label-warning label-fill">Destacado</span>
                         </div>
                      </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
+                     <div class="col-md-6">
+                        <div class="content card-top">
                            <a class="card-link" href="#">
                               <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
                            </a>
@@ -287,6 +307,18 @@
                               <i class="fa fa-star-o "></i>
                               <span class="review-total">(17)</span>
                            </p>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="price-content content text-right">
+                           <span class="price text-success"> 
+                           $ 22,000
+                           </span>
+                           <div class="price-sub">Por día</div>
+                        </div>
+                     </div>
+                     <div class="col-md-8 hidden-xs">
+                        <div class="content card-bottom">
                            <a class="card-link" href="#">
                               <p class="description hidden-xs">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
                            </a>
@@ -297,470 +329,13 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 22,000
-                           </span>
-                           <div class="price-sub">Por día</div>
-                        </div>
-                     </div>
                   </div>
                </div>
-               <!-- termina tarjeta -->
-               <div class="card card-horizontal">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-3">
-                        <div class="image">
-                           <img src="assets/img/hotel2/shot.jpg"/>     
-                        </div>
-                     </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
-                           <a class="card-link" href="#">
-                              <h4 class="title text-info">Alojamiento en el Centro de Santiago departamentos 1 y 2 Dormitorios </h4>
-                           </a>
-                           <p class="category text-left">
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star-o "></i>
-                              <span class="review-total">(27)</span>
-                           </p>
-                           <a class="card-link" href="#">
-                              <p class="description hidden-xs">Departamento en arriendo para 5 personas en Eleuterio Ramírez, Santiago, Santiago, Región Metropolitana, Chile</p>
-                           </a>
-                           <ul class="list-inline amenities">
-                              <li> <span class="parairnos-icon icono-125"></span> 3 Habitaciones</li>
-                              <li> <span class="parairnos-icon icono-008"></span> 2 Baños</li>
-                              <li> <span class="parairnos-icon icono-023"></span> 6 Capacidad</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 36,000
-                           </span>
-                           <div class="price-sub">Por día</div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- termina tarjeta -->
-               <div class="card card-horizontal">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-3">
-                        <div class="image">
-                           <img src="assets/img/hotel3/shot.jpg"/>  
-                        </div>
-                     </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
-                           <a class="card-link" href="#">
-                              <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
-                           </a>
-                           <p class="category text-left">
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star-o "></i>
-                              <span class="review-total">(19)</span>
-                           </p>
-                           <a class="card-link" href="#">
-                              <p class="description hidden-xs">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
-                           </a>
-                           <ul class="list-inline amenities">
-                              <li> <span class="parairnos-icon icono-125"></span> 3 Habitaciones</li>
-                              <li> <span class="parairnos-icon icono-008"></span> 2 Baños</li>
-                              <li> <span class="parairnos-icon icono-023"></span> 6 Capacidad</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success "> 
-                           $ 22,000
-                           </span>
-                           <div class="price-sub">Por día</div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- termina tarjeta -->
-               <div class="card card-horizontal">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-3">
-                        <div class="image">
-                           <img src="assets/img/hotel4/shot.jpg"/>
-                        </div>
-                     </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
-                           <a class="card-link" href="#">
-                              <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
-                           </a>
-                           <p class="category text-left">
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star-o "></i>
-                              <span class="review-total">(11)</span>
-                           </p>
-                           <a class="card-link" href="#">
-                              <p class="description hidden-xs">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
-                           </a>
-                           <ul class="list-inline amenities">
-                              <li> <span class="parairnos-icon icono-125"></span> 3 Habitaciones</li>
-                              <li> <span class="parairnos-icon icono-008"></span> 2 Baños</li>
-                              <li> <span class="parairnos-icon icono-023"></span> 6 Capacidad</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 22,000
-                           </span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- termina tarjeta -->
-               <div class="card card-horizontal">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-3">
-                        <div class="image">
-                           <img src="assets/img/hotel1/shot.jpg"/>
-                        </div>
-                     </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
-                           <a class="card-link" href="#">
-                              <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
-                           </a>
-                           <p class="category text-left">
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star-o "></i>
-                              <span class="review-total">(19)</span>
-                           </p>
-                           <a class="card-link" href="#">
-                              <p class="description hidden-xs">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
-                           </a>
-                           <ul class="list-inline amenities">
-                              <li> <span class="parairnos-icon icono-125"></span> 3 Habitaciones</li>
-                              <li> <span class="parairnos-icon icono-008"></span> 2 Baños</li>
-                              <li> <span class="parairnos-icon icono-023"></span> 6 Capacidad</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 22,000
-                           </span>
-                           <div class="price-sub">Por día</div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- termina tarjeta -->
-               <div class="card card-horizontal">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-3">
-                        <div class="image">
-                           <img src="assets/img/hotel2/shot.jpg"/>    
-                        </div>
-                     </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
-                           <a class="card-link" href="#">
-                              <h4 class="title text-info">Alojamiento en el Centro de Santiago departamentos 1 y 2 Dormitorios </h4>
-                           </a>
-                           <p class="category text-left">
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star-o "></i>
-                              <span class="review-total">(12)</span>
-                           </p>
-                           <a class="card-link" href="#">
-                              <p class="description hidden-xs">Departamento en arriendo para 5 personas en Eleuterio Ramírez, Santiago, Santiago, Región Metropolitana, Chile</p>
-                           </a>
-                           <ul class="list-inline amenities">
-                              <li> <span class="parairnos-icon icono-125"></span> 3 Habitaciones</li>
-                              <li> <span class="parairnos-icon icono-008"></span> 2 Baños</li>
-                              <li> <span class="parairnos-icon icono-023"></span> 6 Capacidad</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 36,000
-                           </span>
-                           <div class="price-sub">Por día</div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- termina tarjeta -->
-               <div class="card card-horizontal">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-3">
-                        <div class="image">
-                           <img src="assets/img/hotel3/shot.jpg"/>     
-                        </div>
-                     </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
-                           <a class="card-link" href="#">
-                              <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
-                           </a>
-                           <p class="category text-left">
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star-o "></i>
-                              <span class="review-total">(16)</span>
-                           </p>
-                           <a class="card-link" href="#">
-                              <p class="description hidden-xs">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
-                           </a>
-                           <ul class="list-inline amenities">
-                              <li> <span class="parairnos-icon icono-125"></span> 3 Habitaciones</li>
-                              <li> <span class="parairnos-icon icono-008"></span> 2 Baños</li>
-                              <li> <span class="parairnos-icon icono-023"></span> 6 Capacidad</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 22,000
-                           </span>
-                           <div class="price-sub">Por día</div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- termina tarjeta -->
-               <div class="card card-horizontal">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-3">
-                        <div class="image">
-                           <img src="assets/img/hotel4/shot.jpg"/>
-                        </div>
-                     </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
-                           <a class="card-link" href="#">
-                              <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
-                           </a>
-                           <p class="category text-left">
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star-o "></i>
-                              <span class="review-total">(62)</span>
-                           </p>
-                           <a class="card-link" href="#">
-                              <p class="description hidden-xs">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
-                           </a>
-                           <ul class="list-inline amenities">
-                              <li> <span class="parairnos-icon icono-125"></span> 3 Habitaciones</li>
-                              <li> <span class="parairnos-icon icono-008"></span> 2 Baños</li>
-                              <li> <span class="parairnos-icon icono-023"></span> 6 Capacidad</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 22,000
-                           </span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- termina tarjeta -->
-               <div class="card card-horizontal">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-3">
-                        <div class="image">
-                           <img src="assets/img/hotel1/shot.jpg"/>
-                        </div>
-                     </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
-                           <a class="card-link" href="#">
-                              <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
-                           </a>
-                           <p class="category text-left">
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star-o "></i>
-                              <span class="review-total">(19)</span>
-                           </p>
-                           <a class="card-link" href="#">
-                              <p class="description hidden-xs">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
-                           </a>
-                           <ul class="list-inline amenities">
-                              <li> <span class="parairnos-icon icono-125"></span> 3 Habitaciones</li>
-                              <li> <span class="parairnos-icon icono-008"></span> 2 Baños</li>
-                              <li> <span class="parairnos-icon icono-023"></span> 6 Capacidad</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 22,000
-                           </span>
-                           <div class="price-sub">Por día</div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- termina tarjeta -->
-               <div class="card card-horizontal">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-3">
-                        <div class="image">
-                           <img src="assets/img/hotel2/shot.jpg"/>     
-                        </div>
-                     </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
-                           <a class="card-link" href="#">
-                              <h4 class="title text-info">Alojamiento en el Centro de Santiago departamentos 1 y 2 Dormitorios </h4>
-                           </a>
-                           <p class="category text-left">
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star-o "></i>
-                              <span class="review-total">(34)</span>
-                           </p>
-                           <a class="card-link" href="#">
-                              <p class="description hidden-xs">Departamento en arriendo para 5 personas en Eleuterio Ramírez, Santiago, Santiago, Región Metropolitana, Chile</p>
-                           </a>
-                           <ul class="list-inline amenities">
-                              <li> <span class="parairnos-icon icono-125"></span> 3 Habitaciones</li>
-                              <li> <span class="parairnos-icon icono-008"></span> 2 Baños</li>
-                              <li> <span class="parairnos-icon icono-023"></span> 6 Capacidad</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 36,000
-                           </span>
-                           <div class="price-sub">Por día</div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- termina tarjeta -->
-               <div class="card card-horizontal">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-3">
-                        <div class="image">
-                           <img src="assets/img/hotel3/shot.jpg"/>     
-                        </div>
-                     </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
-                           <a class="card-link" href="#">
-                              <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
-                           </a>
-                           <p class="category text-left">
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star-o "></i>
-                              <span class="review-total">(19)</span>
-                           </p>
-                           <a class="card-link" href="#">
-                              <p class="description hidden-xs">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
-                           </a>
-                           <ul class="list-inline amenities">
-                              <li> <span class="parairnos-icon icono-125"></span> 3 Habitaciones</li>
-                              <li> <span class="parairnos-icon icono-008"></span> 2 Baños</li>
-                              <li> <span class="parairnos-icon icono-023"></span> 6 Capacidad</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 22,000
-                           </span>
-                           <div class="price-sub">Por día</div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- termina tarjeta -->
-               <div class="card card-horizontal">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-3">
-                        <div class="image">
-                           <img src="assets/img/hotel4/shot.jpg"/>
-                        </div>
-                     </div>
-                     <div class="col-lg-7 col-md-6">
-                        <div class="content">
-                           <a class="card-link" href="#">
-                              <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
-                           </a>
-                           <p class="category text-left">
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star text-warning"></i>
-                              <i class="fa fa-star-o "></i>
-                              <span class="review-total">(17)</span>
-                           </p>
-                           <a class="card-link" href="#">
-                              <p class="description hidden-xs">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
-                           </a>
-                           <ul class="list-inline amenities">
-                              <li> <span class="parairnos-icon icono-125"></span> 3 Habitaciones</li>
-                              <li> <span class="parairnos-icon icono-008"></span> 2 Baños</li>
-                              <li> <span class="parairnos-icon icono-023"></span> 6 Capacidad</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-3">
-                        <div class="price-content content text-right">
-                           <span class="price text-success"> 
-                           $ 22,000
-                           </span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- termina tarjeta -->
             </div>
             <div class="row">
                <div class="col-md-12 text-center">
                   <ul class="pagination pagination-blue">
-                     <li><a href="#">&laquo;</a></li>
+                     <li><a disabled href="#">&laquo;</a></li>
                      <li><a href="#">1</a></li>
                      <li><a href="#">2</a></li>
                      <li class="active"><a href="#">3</a></li>

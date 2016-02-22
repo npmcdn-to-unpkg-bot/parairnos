@@ -3,9 +3,9 @@
    <!-- Cabezal -->
    <div class="header">
       <h4 class="title">Filtrar por 
-         <button class="btn btn-default btn-xs btn pull-right btn-simple" rel="tooltip" title="Limpiar filtros">
+         <a href="resultados.php" class="btn btn-default btn-xs btn pull-right btn-simple" rel="tooltip" title="Limpiar filtros">
          <i class="fa fa-refresh"></i>
-         </button>
+         </a>
       </h4>
    </div>
    <!-- /Cabezal -->
@@ -33,16 +33,16 @@
                   </div>
                </div>
                <div class="panel-body">
-                  <label class="checkbox">
+                  <a href="resultados.php" class="checkbox">
                   <input checked type="checkbox" value="" data-toggle="checkbox">
                   Entre $ 0 y $ 300 <span class="badge pull-right">1465</span>
-                  </label>
+                  </a>
                   <label class="checkbox">
-                  <input checked type="checkbox" value="" data-toggle="checkbox">
+                  <input checked onclick='window.location.assign("resultados.php")' type="checkbox" value="" data-toggle="checkbox">
                   Entre $ 300 y $ 600 <span class="badge pull-right">645</span>
                   </label>
                   <label class="checkbox">
-                  <input type="checkbox" value="" data-toggle="checkbox">
+                  <input onclick='window.location.assign("resultados.php")' type="checkbox" value="" data-toggle="checkbox">
                   Entre $ 600 y $ 1.000  <span class="badge pull-right">113</span>
                   </label>
                   <label class="checkbox">

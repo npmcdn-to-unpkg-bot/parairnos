@@ -168,10 +168,10 @@ include("header-admin.php");
                                  <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                                  </div>
                               </div>
-                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-play"></i></button>
-                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-calendar"></i></button>
-                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-pencil"></i></button>
-                              <button type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-remove"></i></button>
+                              <button rel="tooltip" title="Publicar" type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-play"></i></button>
+                              <button rel="tooltip" title="Editar calendario" type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-calendar"></i></button>
+                              <button rel="tooltip" title="Editar publicación" type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-pencil"></i></button>
+                              <button rel="tooltip" title="Borrar publicación" type="button" class="btn btn-fill btn-lg btn-circle"><i class="fa fa-remove"></i></button>
                            </div>
                         </div>
                         <div class="row">

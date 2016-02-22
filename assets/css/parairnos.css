@@ -829,7 +829,7 @@
 }
 
 .avisos-destacados .price {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -1144,7 +1144,10 @@
     color: #999;
     font-weight: 600;
     height: 42px;
-    width: 115px;
+}
+
+.dropdownOrdenar {
+    min-width: 100%;
 }
 
 .admin-section .ordernarPor .btn {
@@ -1360,6 +1363,7 @@ sup {
 
 .ordernarPor .btn {
     border-color: #DDDDDD !important;
+    background: #FFF;
 }
 
 .offcanvas-outer {
@@ -4126,4 +4130,17 @@ a.menu-link:hover {
    border-color: red !important;
    background: #EAEAEA; /* Old browsers */
    background: linear-gradient(-45deg,  #FFD2CA 50%, #EAEAEA 50%) !important;
+}
+
+.avisos-destacados .content {
+    margin-left: -10px;
+}
+
+.avisos-destacados .card-top {
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.avisos-destacados .card-bottom {
+    padding-top: 0px;
 }

@@ -1652,7 +1652,7 @@ fieldset[disabled] .form-control {
 .tooltip-inner {
   background-color: #FAE6A4;
   border-radius: 4px;
-  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(115, 71, 38, 0.23);
+  box-shadow: 0  1px 13px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(115, 71, 38, 0.23);
   color: #734726;
   max-width: 260px;
   min-width: 86px;
