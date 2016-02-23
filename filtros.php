@@ -37,18 +37,18 @@
                   <input checked type="checkbox" value="" data-toggle="checkbox">
                   Entre $ 0 y $ 300 <span class="badge pull-right">1465</span>
                   </a>
-                  <label class="checkbox">
+                  <a href="resultados.php" class="checkbox">
                   <input checked onclick='window.location.assign("resultados.php")' type="checkbox" value="" data-toggle="checkbox">
                   Entre $ 300 y $ 600 <span class="badge pull-right">645</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input onclick='window.location.assign("resultados.php")' type="checkbox" value="" data-toggle="checkbox">
                   Entre $ 600 y $ 1.000  <span class="badge pull-right">113</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Más de $ 1.000 <span class="badge pull-right">838</span>
-                  </label>
+                  </a>
                </div>
             </div>
          </div>
@@ -65,22 +65,22 @@
             </div>
             <div id="TipoDePropiedad" class="panel-collapse collapse">
                <div class="panel-body">
-                  <label class="checkbox">
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Casa en arriendo <span class="badge pull-right">14</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Departamento en arriendo <span class="badge pull-right">6</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Hosteria <span class="badge pull-right">11</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Hotel <span class="badge pull-right">8</span>
-                  </label>  
+                  </a>  
                </div>
             </div>
          </div>
@@ -97,42 +97,42 @@
             </div>
             <div id="caracteristicas" class="panel-collapse collapse in">
                <div class="panel-body">
-                  <label class="checkbox">
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Aire acondicionado <span class="badge pull-right">14</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Calefacción <span class="badge pull-right">68</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Dvd <span class="badge pull-right">6</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Garage <span class="badge pull-right">19</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Jardín <span class="badge pull-right">17</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Parrilla <span class="badge pull-right">32</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Pileta <span class="badge pull-right">54</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Televisión <span class="badge pull-right">112</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   Wifi <span class="badge pull-right">76</span>
-                  </label>
+                  </a>
                </div>
             </div>
          </div>
@@ -149,46 +149,46 @@
             </div>
             <div id="CantidadDePersonas" class="panel-collapse collapse">
                <div class="panel-body">
-                  <label class="checkbox">
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   1 persona <span class="badge pull-right">23</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   2 personas <span class="badge pull-right">11</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   3 personas <span class="badge pull-right">17</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   4 personas <span class="badge pull-right">54</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   5 personas <span class="badge pull-right">28</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   6 personas <span class="badge pull-right">41</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   7 personas <span class="badge pull-right">13</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   8 personas <span class="badge pull-right">86</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   9 personas <span class="badge pull-right">27</span>
-                  </label>
-                  <label class="checkbox">
+                  </a>
+                  <a href="resultados.php" class="checkbox">
                   <input type="checkbox" value="" data-toggle="checkbox">
                   10 personas <span class="badge pull-right">54</span>
-                  </label>
+                  </a>
                </div>
             </div>
          </div>
