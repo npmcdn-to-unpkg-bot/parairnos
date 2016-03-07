@@ -298,11 +298,6 @@
     overflow: hidden;
 }
 
-.gallery img {
-    display: block;
-    height: 300px;
-}
-
 .container-comments h3 {
     margin: 10px 0 30px;
 }
@@ -585,7 +580,8 @@
 }
 
 .wizardSection .form-control,
-.datos-section .form-control {
+.datos-section .form-control,
+#cambiarBusqueda .form-control {
     background: #f5f5f5;
 }
 
@@ -917,6 +913,26 @@
     font-weight: bold;
 }
 
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    .gallery img {
+        display: block;
+        height: 300px;
+    }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (max-device-width : 480px) {
+    .gallery, .flickity-viewport {
+        height: 200px !important;
+    }
+    .gallery img {
+        display: block;
+        height: 200px;
+    }
+}
+
 @media only screen and (max-width: 480px) {
 
     .admin-section .detalle li {
@@ -993,6 +1009,12 @@
 
 .parairnosSearch {
     background: url('../img/marker.jpg') no-repeat #FFFFFF 7px 7px;
+    padding-left: 33px;
+    box-shadow: none;
+}
+
+.parairnosSearchResults {
+    background: url('../img/marker.png') no-repeat #F5F5F5 7px 7px !important;
     padding-left: 33px;
 }
 
@@ -1226,6 +1248,7 @@
     border: none !important;
     padding: 0px !important;
     height: 25px !important;
+    box-shadow: none;
 }
 
 .selectFilters .list-group-horizontal {
@@ -2721,6 +2744,22 @@ sup {
     position: relative;
     border-radius: 6px;
 }
+.searchbar input.form-control:focus {
+    background: #FFF !important;
+    color: #333; 
+}
+
+.searchbar input.form-control:focus::-webkit-input-placeholder {
+   color: #333;
+}
+
+.searchbar input.form-control:focus:-moz-placeholder { /* Firefox 18- */
+   color: #333;  
+}
+
+.searchbar input.form-control:focus::-moz-placeholder {  /* Firefox 19+ */
+   color: #333;  
+}
 
 .searchbar .form-control:hover {
     background: #2158CE none repeat scroll 0 0;
@@ -2728,10 +2767,18 @@ sup {
 }
 
 .searchbar .submit i {
-    color: #fff;
     position: absolute;
     right: 15px;
     top: 11px;
+}
+
+.pagination li a{
+    width: 35px;
+    height: 35px;
+}
+
+.searchbar input.form-control:focus .submit i{
+    color: #2866E2; 
 }
 
 .navbar-right {

@@ -29,11 +29,67 @@
    <div class="container">
       <div class="row">
          <div class="col-md-12">
+            <div class="collapse" id="cambiarBusqueda">
+              <div class="panel">
+                  <div class="panel-body">
+                    <form role="search">   
+                     <div class="row">
+                        <div class="col-md-4">
+                         <div class="form-group">
+                               <input onclick="this.focus();this.select()" type="text" class="form-control parairnosSearchResults" name="destino" placeholder="Destino" value="Santiago de Chile">
+                         </div>
+                      </div> 
+                      <div class="col-md-2">
+                         <div class="form-group">
+                            <input value="04/03/2016" id="dpd1" type="text" class="form-control" name="Desde" placeholder="Desde">
+                        </div>
+                      </div> 
+                      <div class="col-md-2">
+                         <div class="form-group">
+                            <input value="04/04/2016" id="dpd2" type="text" class="form-control" name="Hasta" placeholder="Hasta">
+                        </div>
+                      </div> 
+                      <div class="col-md-2">
+                         <div class="form-group">
+                           <select name="huge" class="selectpicker" data-style="form-control" data-menu-style="">
+                              <option disabled> Personas</option>
+                              <optionvalue="1">1 </option>
+                              <option selected value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                           </select>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                         <button type="submit" class="btn btn-warning btn-fill">Actualizar resultados</button>
+                      </div>
+                     </div>
+                       
+                                           
+ 
+                    </form>
+                  </div>
+              </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-md-6">
             <ol class="breadcrumb">
                <li><a href="home.php#">Inicio</a></li>
                <li><a href="#">Chile</a></li>
                <li class="active">Santiago de Chile</li>
             </ol>
+         </div>
+         <div class="col-md-6">
+            <a class="pull-right" role="button" data-toggle="collapse" href="#cambiarBusqueda" aria-expanded="false" aria-controls="cambiarBusqueda">
+               Cambiar búsqueda 
+            </a>
          </div>
       </div>
       <div class="row">
@@ -335,7 +391,7 @@
             <div class="row">
                <div class="col-md-12 text-center">
                   <ul class="pagination pagination-blue">
-                     <li><a disabled href="#">&laquo;</a></li>
+                     <li><a class="btn disabled" href="#">&laquo;</a></li>
                      <li><a href="#">1</a></li>
                      <li><a href="#">2</a></li>
                      <li class="active"><a href="#">3</a></li>
