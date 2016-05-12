@@ -39,12 +39,12 @@ include("header.php");
 
               <div class="row">
                      <div class="col-xs-12">
-                        <button class="btn btn-primary btn-block btn-lg btn-fill" type="submit">Ingresar a mi cuenta</button>
+                        <button class="btn btn-primary btn-block btn-lg btn-fill btn-round" type="submit">Ingresar a mi cuenta</button>
                      </div>
               </div>
                   
                 <br>
-                <p class="text-center"><a href="#" title="Forgot password">
+                <p class="text-center"><a data-toggle="modal" data-target="#forgotPasswd" title="Forgot password" href="#" >
                     ¿Olvidaste tu contraseña?</a>
                  </p>
             </form>
@@ -55,6 +55,33 @@ include("header.php");
   </div>
 </div>
 <!-- /Ingresar a mi cuenta -->
+<!-- Recordar contraseña -->
+<div class="modal fade" id="forgotPasswd" tabindex="-1" role="dialog" aria-labelledby="forgotPasswd" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Recordar contraseña</h4>
+                  </div>
+
+                  <div class="modal-body">
+                       
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" placeholder="" class="form-control" id="email" placeholder="Tu email" />
+                  </div>
+                  
+                      <button class="btn btn-block btn-success btn-lg btn-fill">Enviar contraseña</button>
+                       
+                  </div>
+
+                  <div class="modal-footer">
+                        <button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Cerrar</button>
+                  </div>
+            </div>
+      </div>
+</div>
+<!-- /Recordar contraseña -->
 <!-- jQuery y Bootstrap -->
 <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
 <script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>

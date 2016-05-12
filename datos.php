@@ -93,7 +93,7 @@
                               <input value="josepaulinog@gmail.com" type="email" tabindex="4" placeholder="Email" class="form-control input-md" id="email" name="email">
                            </div>
                            <div class="form-group">
-                              <a href="admin.php" class="pull-right btn btn-primary btn-md btn-fill" href="#">Actualizar datos</a>  
+                              <a href="admin.php" class="pull-right btn btn-primary btn-md btn-fill btn-round" href="#">Actualizar datos</a>  
                            </div>
                         </form>
                      </div>
@@ -112,7 +112,7 @@
                               <input value="password" type="password" tabindex="5" class="form-control input-md" id="password" name="password">
                            </div>
                            <div class="form-group">
-                              <a href="admin.php" class="pull-right btn btn-primary btn-md btn-fill" href="#">Cambiar contraseña</a>   
+                              <a href="admin.php" class="pull-right btn btn-primary btn-md btn-fill btn-round" href="#">Cambiar contraseña</a>   
                            </div>
                         </form>
                      </div>

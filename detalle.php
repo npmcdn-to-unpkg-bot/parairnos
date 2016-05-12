@@ -1,6 +1,7 @@
 <?php
    include("header.php");
 ?>
+
 <div class="wrapper product-page">
 <!-- Barra headline y buscador -->
 <div class="parairnos-page">
@@ -81,16 +82,57 @@
                                  <!-- /Precio -->
                               </div>
                            </div>
-                           <!-- Slider anuncio -->
-                           <div class="gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "cellAlign": "left", "wrapAround": true, "autoPlay": true }'>
-                              <img src="assets/img/hotel1/1.jpg"/>
-                              <img src="assets/img/hotel1/2.jpg"/>
-                              <img src="assets/img/hotel1/3.jpg"/>
-                              <img src="assets/img/hotel1/4.jpg"/>
-                              <img src="assets/img/hotel1/5.jpg"/>
-                              <img src="assets/img/hotel1/6.jpg"/>
-                           </div>
-                           <!-- /Slider anuncio -->
+
+                           <!-- masterslider -->
+                            <div class="ms-lightbox-template">
+                              <div class="master-slider ms-skin-default" id="masterslider">
+                                  <!-- new slide -->                                 
+                                  <div class="ms-slide">   
+                                      <img src="assets/js/master-slider/masterslider/blank.gif" data-src="assets/img/hotel2/1.jpg" alt="lorem ipsum dolor sit"/>
+                                      <img class="ms-thumb" src="assets/img/hotel1/1.jpg" alt="thumb" />
+                                      <a href="assets/img/hotel1/1.jpg" data-gallery class="ms-lightbox hidden-xs"> lightbox </a>
+                                  </div>
+                                  <!-- end of slide -->
+                                  <!-- new slide -->                                 
+                                  <div class="ms-slide">   
+                                      <img src="assets/js/master-slider/masterslider/blank.gif" data-src="assets/img/hotel2/2.jpg" alt="lorem ipsum dolor sit"/>
+                                      <img class="ms-thumb" src="assets/img/hotel2/2.jpg" alt="thumb" />
+                                      <a href="assets/img/hotel2/2.jpg" data-gallery class="ms-lightbox hidden-xs"> lightbox </a>
+                                  </div>
+                                  <!-- end of slide -->
+                                  <!-- new slide -->                                 
+                                  <div class="ms-slide">   
+                                      <img src="assets/js/master-slider/masterslider/blank.gif" data-src="assets/img/hotel2/3.jpg" alt="lorem ipsum dolor sit"/>
+                                      <img class="ms-thumb" src="assets/img/hotel2/3.jpg" alt="thumb" />
+                                      <a href="assets/img/hotel2/3.jpg" data-gallery class="ms-lightbox hidden-xs"> lightbox </a>
+                                  </div>
+                                  <!-- end of slide -->
+                                  <!-- new slide -->                                 
+                                  <div class="ms-slide">   
+                                      <img src="assets/js/master-slider/masterslider/blank.gif" data-src="assets/img/hotel2/4.jpg" alt="lorem ipsum dolor sit"/>
+                                      <img class="ms-thumb" src="assets/img/hotel2/4.jpg" alt="thumb" />
+                                      <a href="assets/img/hotel2/4.jpg" data-gallery class="ms-lightbox hidden-xs"> lightbox </a>
+                                  </div>
+                                  <!-- end of slide -->
+                                  <!-- new slide -->                                 
+                                  <div class="ms-slide">   
+                                      <img src="assets/js/master-slider/masterslider/blank.gif" data-src="assets/img/hotel2/5.jpg" alt="lorem ipsum dolor sit"/>
+                                      <img class="ms-thumb" src="assets/img/hotel2/5.jpg" alt="thumb" />
+                                      <a href="assets/img/hotel2/5.jpg" data-gallery class="ms-lightbox hidden-xs"> lightbox </a>
+                                  </div>
+                                  <!-- end of slide -->
+                                  <!-- new slide -->                                 
+                                  <div class="ms-slide">   
+                                      <img src="assets/js/master-slider/masterslider/blank.gif" data-src="assets/img/hotel3/1.jpg" alt="lorem ipsum dolor sit"/>
+                                      <img class="ms-thumb" src="assets/img/hotel3/1.jpg" alt="thumb" />
+                                      <a href="assets/img/hotel3/1.jpg" data-gallery class="ms-lightbox hidden-xs"> lightbox </a>
+                                  </div>
+                                  <!-- end of slide -->
+                               
+                              </div>
+                            </div>
+                              <!-- end of masterslider -->
+
                            <div class="content">
                               <div class="row">
                                  <div class="col-md-12">
@@ -445,10 +487,39 @@
    </div>
 </div>
 <!-- /Comentarios-->
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next">
+                   <button type="button" class="carousel-control left prev" data-slide="prev">
+                       <span class="fa fa-chevron-left"></span>
+                     </button>
 
-<?php
-   include("footer.php");
-?>
+                     <button type="button" class="carousel-control right next" data-slide="next">
+                       <span class="fa fa-chevron-right"></span>
+                     </button>
+                </div>       
+
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Modal Mapa -->
 <div class="modal fade" id="myMapModal">
    <div class="modal-dialog modal-lg">
@@ -472,3 +543,28 @@
    </div>
    <!-- /.modal-dialog -->
 </div>
+
+<?php
+   include("footer.php");
+?>
+
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="https://raw.githubusercontent.com/blueimp/Bootstrap-Image-Gallery/master/js/bootstrap-image-gallery.min.js"></script>
+
+<script>
+
+        var slider = new MasterSlider();
+ 
+          slider.control('arrows');  
+          slider.control('lightbox');
+          slider.control('thumblist' , {autohide:false ,dir:'h',align:'bottom', width:130, height:85, margin:5, space:5 , hideUnder:400});
+       
+          slider.setup('masterslider' , {
+              width:800,
+              height:450,
+              space:5,
+              loop:true,
+              view:'fade'
+          });
+
+</script>

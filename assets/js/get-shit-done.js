@@ -17,6 +17,30 @@ $(document).ready(function(){
         $(this).find('input[type="radio"]').prop("checked", true);
     });
 
+    // Agregando nuevo slider 
+
+    if ($(".gallery-top").length != 0) {
+            var galleryTop = new Swiper('.gallery-top', {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 10,
+            grabCursor: true,
+            autoplay: 2500,
+            keyboardControl: true
+        });
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            touchRatio: 0.2,
+            slideToClickedSlide: true,
+            grabCursor: true
+        });
+        galleryTop.params.control = galleryThumbs;
+        galleryThumbs.params.control = galleryTop;
+
+    }
+
     // Activando Morphing Buttons 
     $('[data-toggle="morphing"]').each(function() {
         $(this).morphingButton();
@@ -25,7 +49,7 @@ $(document).ready(function(){
     //  Activando tooltips   
     $('[rel="tooltip"]').tooltip();
 
-    //    Activando bootstrap-select
+    //  Activando bootstrap-select
     if ($(".selectpicker").length != 0) {
         $(".selectpicker").selectpicker();
     }
@@ -34,15 +58,65 @@ $(document).ready(function(){
 
         // WIZARD
         // =================================================================
-        $('#parairnos-wizard').bootstrapWizard({
+        $('#parairnos-wizard')
+
+        .formValidation({
+            button: {
+                selector: '#validateButton',
+                disabled: 'disabled'
+            },
+            fields: {
+            'property.headline': {
+                validators: {
+                    notEmpty: {
+                        message: 'Por favor, introduzca un título'
+                    }
+                }
+            },
+            'property.description': {
+                validators: {
+                     notEmpty: {
+                        message: 'Por favor, introduzca un detalle'
+                    }
+                }
+            }
+        },
+            framework: 'bootstrap',
+            // This option will not ignore invisible fields which belong to inactive panels
+            excluded: ':disabled',
+        })
+        .on('err.field.fv', function(e, data) {
+            if (data.fv.getSubmitButton()) {
+                data.fv.disableSubmitButtons(false);
+            }
+        })
+        .on('success.field.fv', function(e, data) {
+            if (data.fv.getSubmitButton()) {
+                data.fv.disableSubmitButtons(false);
+            }
+              // Prevent form submission
+            e.preventDefault();
+
+            var $form = $(e.target),
+                fv    = $(e.target).data('formValidation');
+
+            // Do whatever you want here ...
+
+            // Then submit the form as usual
+            fv.defaultSubmit();
+        })
+        .bootstrapWizard({
             tabClass: 'wz-steps',
+            onTabClick: function(tab, navigation, index) {
+                return validateTab(index);
+            },
             nextSelector: '.next',
             previousSelector: '.previous',
-            // onTabClick: function(tab, navigation, index) {
-            //     return false;
-            // },
             onInit: function() {
                 $('#parairnos-wizard').find('.finish').hide().prop('disabled', true);
+            },
+            onPrevious: function(tab, navigation, index) {
+                return validateTab(index + 1);
             },
             onTabShow: function(tab, navigation, index) {
                 var $total = navigation.find('li').length;
@@ -81,13 +155,31 @@ $(document).ready(function(){
             }
         });
 
+        function validateTab(index) {
+        var fv   = $('#publicacionPropiedad').data('formValidation'), // FormValidation instance
+            // The current tab
+            $tab = $('#publicacionPropiedad').find('.tab-pane').eq(index);
+
+        // Validate the container
+        fv.validateContainer($tab);
+
+        var isValidStep = fv.isValidContainer($tab);
+        if (isValidStep === false || isValidStep === null) {
+            // Do not jump to the target tab
+            return false;
+        }
+
+        return true;
+        }
+
+
         $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
-            google.maps.event.trigger(document.getElementById("map"), 'resize');
+            // google.maps.event.trigger(document.getElementById("map"), 'resize');
 
         });
 
         $('a[href="#tab2"]').on('shown.bs.tab', function(e) {
-            google.maps.event.trigger(map, 'resize');
+            // google.maps.event.trigger(map, 'resize');
         });
     }
 
@@ -114,9 +206,14 @@ $(document).ready(function(){
                 multiSelect: 100,
                 onSelect: function (dates) {}
             });
-            $('#calendario-ocupacional').datepick(
-                'setDate', ['11/01/2016', '12/01/2016', '13/01/2016', '14/01/2016', '15/01/2016', '16/01/2016', '17/01/2016', '21/01/2016', '22/01/2016', '23/01/2016', '24/01/2016', '25/01/2016', '26/01/2016', '27/01/2016', '28/01/2016', '29/01/2016', '30/01/2016', '31/01/2016', '01/02/2016', '02/02/2016', '03/02/2016', '04/02/2016', '05/02/2016', '06/02/2016', '07/02/2016', '08/02/2016', '09/02/2016', '10/02/2016', '11/02/2016', '12/02/2016', '13/02/2016', '14/02/2016', '15/02/2016', '16/02/2016', '17/02/2016', '18/02/2016', '19/02/2016', '20/02/2016', '21/02/2016', '22/02/2016', '23/02/2016', '24/02/2016', '25/02/2016', '26/02/2016', '06/03/2016', '07/03/2016', '08/03/2016', '09/03/2016', '10/03/2016', '11/03/2016', '12/03/2016', '13/03/2016', '14/03/2016', '15/03/2016', '16/03/2016', '17/03/2016', '18/03/2016', '19/03/2016', '20/03/2016', '21/03/2016', '22/03/2016', '23/03/2016', '24/03/2016', '25/03/2016', '26/03/2016', '27/03/2016', '28/03/2016', '29/03/2016', '30/03/2016', '31/03/2016', '01/04/2016', '02/04/2016', '03/04/2016', '04/04/2016', '05/04/2016', '06/04/2016', '07/04/2016', '08/04/2016', '09/04/2016', '10/04/2016', '11/04/2016', '12/04/2016', '13/04/2016', '14/04/2016', '15/04/2016', '16/04/2016', '17/04/2016', '18/04/2016', '19/04/2016', '20/04/2016', '21/04/2016', '22/04/2016']
-            );
+            //$('#calendario-ocupacional').datepick(
+                //'setDate', bookedDates
+            //);
+            $("#calendario-ocupacional td a").unbind();
+
+            $('#calendario-ocupacional').on('mouseover', '.datepick-cmd', function() {
+                 $("#calendario-ocupacional td a").unbind();
+            });
         }
     })(jQuery);
 
@@ -143,7 +240,7 @@ $(document).ready(function(){
                 multiSelect: 100
             });
             $('#calendario-ocupacional-admin').datepick(
-                'setDate', ['11/01/2016', '12/01/2016', '13/01/2016', '14/01/2016', '15/01/2016', '16/01/2016', '17/01/2016', '21/01/2016', '22/01/2016', '23/01/2016', '24/01/2016', '25/01/2016', '26/01/2016', '27/01/2016', '28/01/2016', '29/01/2016', '30/01/2016', '31/01/2016', '01/02/2016', '02/02/2016', '03/02/2016', '04/02/2016', '05/02/2016', '06/02/2016', '07/02/2016', '08/02/2016', '09/02/2016', '10/02/2016', '11/02/2016', '12/02/2016', '13/02/2016', '14/02/2016', '15/02/2016', '16/02/2016', '17/02/2016', '18/02/2016', '19/02/2016', '20/02/2016', '21/02/2016', '22/02/2016', '23/02/2016', '24/02/2016', '25/02/2016', '26/02/2016', '06/03/2016', '07/03/2016', '08/03/2016', '09/03/2016', '10/03/2016', '11/03/2016', '12/03/2016', '13/03/2016', '14/03/2016', '15/03/2016', '16/03/2016', '17/03/2016', '18/03/2016', '19/03/2016', '20/03/2016', '21/03/2016', '22/03/2016', '23/03/2016', '24/03/2016', '25/03/2016', '26/03/2016', '27/03/2016', '28/03/2016', '29/03/2016', '30/03/2016', '31/03/2016', '01/04/2016', '02/04/2016', '03/04/2016', '04/04/2016', '05/04/2016', '06/04/2016', '07/04/2016', '08/04/2016', '09/04/2016', '10/04/2016', '11/04/2016', '12/04/2016', '13/04/2016', '14/04/2016', '15/04/2016', '16/04/2016', '17/04/2016', '18/04/2016', '19/04/2016', '20/04/2016', '21/04/2016', '22/04/2016']
+                'setDate', bookedDates
             );
         }
     })(jQuery);
@@ -476,8 +573,14 @@ $(document).ready(function(){
 
 });
 
-
-var myLatlng = new google.maps.LatLng(-33.0102757, -71.5526893);
+var latAndLong = document.getElementById("latLong")
+if (latAndLong) {
+    latAndLong = latAndLong.value.split(",");
+    latAndLong = [latAndLong[0] * 1, latAndLong[1] * 1];
+} else {
+    latAndLong = [-33.0102757, -71.5526893];
+}
+var myLatlng = new google.maps.LatLng(latAndLong[0], latAndLong[1]);
 var mapOptions = {
     draggable: false,
     zoom: 14,
@@ -494,9 +597,8 @@ var marker = new google.maps.Marker({
 // To add the marker to the map, call setMap();
 marker.setMap(map);
 
-
 var map;
-var myCenter = new google.maps.LatLng(-33.0102757, -71.5526893);
+var myCenter = new google.maps.LatLng(latAndLong[0], latAndLong[1]);
 var marker = new google.maps.Marker({
     position: myCenter
 });
@@ -562,4 +664,3 @@ function debounce(func, wait, immediate) {
         if (immediate && !timeout) func.apply(context, args);
     };
 };
-

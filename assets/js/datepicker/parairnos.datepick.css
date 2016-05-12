@@ -125,11 +125,17 @@ button.datepick-cmd {
 .datepick-month-row {
 	clear: left;
 }
+#calendario-ocupacional table {
+	font-size: 14px;
+}
 .datepick-month {
 	float: left;
 	width: 15em;
-	border: 1px solid #3472F7;
+	border-right: 1px solid #3472F7;
 	text-align: center;
+}
+.datepick-month:last-of-type{
+	border-right: 0px;
 }
 .datepick-month-header, .datepick-month-header select, .datepick-month-header input {
 	height: 30px;

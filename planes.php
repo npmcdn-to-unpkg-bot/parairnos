@@ -92,7 +92,7 @@ include("header-admin.php");
                                              </li>
                                           </ul>
                                           <br>
-                                          <div class="btn btn-fill btn-md btn-default center-block">Elegir</div>
+                                          <div class="btn btn-fill btn-md btn-default center-block btn-round">Elegir</div>
                                        </div>
                                     </div>
                                     <!-- end card -->
@@ -127,7 +127,7 @@ include("header-admin.php");
                                              </li>
                                           </ul>
                                           <br>
-                                          <div class="btn btn-fill btn-md btn-success center-block">Elegir</div>
+                                          <div class="btn btn-fill btn-md btn-success center-block btn-round">Elegir</div>
                                        </div>
                                     </div>
                                     <!-- end card -->
@@ -147,7 +147,7 @@ include("header-admin.php");
                                           </div>
                                           <br>
                                           <h4 class="text-primary text-center">Destacado Anual</h4>
-                                          <span class="center-block text-center label label-primary label-md">¡Ahorras un 50%!</span>
+                                          <span class="center-block btn-round text-center label label-primary label-md">¡Ahorras un 50%!</span>
                                           <ul class="list-unstyled list-lines">
                                              <li>
                                                 <i class="fa fa-check"></i> Podés publicar hasta 15 fotos de tu alojamiento
@@ -163,7 +163,7 @@ include("header-admin.php");
                                              </li>
                                           </ul>
                                           <br>
-                                          <div class="btn btn-fill btn-md btn-primary center-block">Elegir</div>
+                                          <div class="btn btn-fill btn-md btn-primary center-block btn-round">Elegir</div>
                                        </div>
                                     </div>
                                     <!-- end card -->
@@ -187,7 +187,7 @@ include("header-admin.php");
                                           <h4 class="text-default text-center">Plan 10 + 1</h4>
                                           <p class="text-center">Publique hasta 10 Avisos Simples y 1 Destacado.</p>
                                           <br>
-                                          <div class="btn btn-fill btn-md btn-default center-block">Elegir</div>
+                                          <div class="btn btn-fill btn-md btn-default center-block btn-round">Elegir</div>
                                        </div>
                                     </div>
                                     <!-- end card -->
@@ -206,7 +206,7 @@ include("header-admin.php");
                                              Publique hasta 25 Avisos Simples y 3 Avisos Destacados.
                                           </p>
                                           <br>
-                                          <div class="btn btn-fill btn-md btn-success center-block">Elegir</div>
+                                          <div class="btn btn-fill btn-md btn-success center-block btn-round">Elegir</div>
                                        </div>
                                     </div>
                                     <!-- end card -->
@@ -223,7 +223,7 @@ include("header-admin.php");
                                           <h4 class="text-warning text-center">Plan 50 + 5</h4>
                                           <p class="text-center">Publique 50 avisos simples y 5 destacados. </p>
                                           <br>
-                                          <div class="btn btn-fill btn-md btn-warning center-block">Elegir</div>
+                                          <div class="btn btn-fill btn-md btn-warning center-block btn-round">Elegir</div>
                                        </div>
                                     </div>
                                     <!-- end card -->
@@ -240,7 +240,7 @@ include("header-admin.php");
                                           <h4 class="text-primary text-center">Plan ilimitado + 10</h4>
                                           <p class="text-center">Publique avisos simples ilimitados y 10 destacado. </p>
                                           <br>
-                                          <div class="btn btn-fill btn-md btn-primary center-block">Elegir</div>
+                                          <div class="btn btn-fill btn-md btn-primary center-block btn-round">Elegir</div>
                                        </div>
                                     </div>
                                     <!-- end card -->

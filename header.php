@@ -18,8 +18,13 @@
       <link href="assets/fonts/linearicons/style.css" rel="stylesheet" />
       <link href="assets/css/parairnos-icon.css" rel="stylesheet" />
       <link href="assets/css/jquery.offcanvas.min.css" rel="stylesheet" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.min.css">
+      <link href="assets/js/master-slider/masterslider/skins/default/style.css" rel="stylesheet" type="text/css" >
+      <link href="assets/js/master-slider/masterslider/style/masterslider.css" rel="stylesheet" type="text/css" >
+      <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+      <link rel="stylesheet" href="https://raw.githubusercontent.com/blueimp/Bootstrap-Image-Gallery/master/css/bootstrap-image-gallery.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/formvalidation/0.6.1/css/formValidation.css">
    </head>
+   
    <?php $current_page = basename($_SERVER['PHP_SELF']); ?>
    <body <?php 
       if ( $current_page == "registro.php" ){ 
@@ -56,7 +61,7 @@
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                     <li><a href="ingresar.php">Ingresar</a></li>
+                     
                      <li class="dropdown country-dropdown">
                         <a href="#" class="dropdown-toggle " data-toggle="dropdown"> 
                         <img src="assets/img/flags/CL.png"/>
@@ -69,6 +74,18 @@
                            <li><a href="#"><img src="assets/img/flags/SV.png"/> Uruguay</a></li>
                         </ul>
                      </li>
+                     <li class="dropdown language-dropdown">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown"> 
+                        Español
+                        <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Español</a></li>
+                           <li><a href="#">English</a></li>
+                           <li><a href="#">Portuguese</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="ingresar.php">Entrar</a></li>
                      <li>
                         <form method="link" action="registro.php"><button class="btn btn-round btn-fill btn-success">Publicar gratis</button></form>
                      </li>

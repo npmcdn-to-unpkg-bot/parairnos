@@ -100,7 +100,7 @@
                      <!--Navegación-->
                   </div>
                   <!--Formulario-->
-                  <form class="">
+                  <form id="publicacionPropiedad">
                      <div class="panel-body">
                         <div class="tab-content">
                            <!-- Datos básicos -->
@@ -110,11 +110,11 @@
                                     <h4 class="section-title">Datos del alojamiento</h4>
                                     <div class="form-group">
                                        <label for="name">Título con el que se mostrará su propiedad</label>
-                                       <input type="text" placeholder="" id="name" class="form-control" name="name">
+                                       <input type="text" placeholder="" id="property.headline" class="form-control" name="name">
                                     </div>
                                     <div class="form-group">
                                        <label for="message">Descripción de la propiedad</label>
-                                       <textarea rows="3" id="message" class="form-control" name="message"></textarea>
+                                       <textarea rows="3" id="message" class="form-control" name="property.description"></textarea>
                                     </div>
                                     <div class="row">
                                        <div class="col-xs-12 col-sm-12 col-md-12">
@@ -303,7 +303,7 @@
                                     </div>
                                     <div class="form-group">
                                        <label for="name">Direccion</label>
-                                       <input type="text" placeholder="Calle y número" id="name" class="form-control" name="name">
+                                       <input id="address" type="text" placeholder="Calle y número" id="name" class="form-control" name="name">
                                     </div>
                                  </div>
                                  <div class="col-xs-6 col-sm-6 col-md-6">
@@ -337,13 +337,87 @@
                            <div class="tab-pane fade" id="tab4">
                               <div class="row">
                                  <div class="col-md-6">
-                                    <h4 class="section-title">Fotos</h4>
+                                    <h4 class="section-title">Fotos del alojamiento</h4>
                                     <div class="form-group">
-                                       <label for="name">Fotos de la propiedad</label>
-                                       <input type="file" class="form-control photo-post">
+                                       <p>Podés reordenar las fotos como más te guste. Para moverlas hace click, sostener y movelo</p>
+                                       <input type="file" class="filestyle photo-post" data-buttonText="Subir nueva foto" data-size="md" data-iconName="fa fa-upload" data-input="false" data-buttonName="btn-primary btn-fill">
+                                    </div>
+                                    <br>                                    
+                                 </div>
+                                 <div class="col-md-6">
+                                    <br><br>
+                                    <div class="alert alert-success fade in" role="alert">
+                                       <a href="#" class="fa fa-close pull-right" data-dismiss="alert" aria-label="close"></a>
+                                       <h4>Aviso</h4>
+                                       <p>
+                                       Has superado el límite de fotos permitidas para un Aviso Simple, si quieres subir más debes <a href="#">destacar tu aviso</a>.                                       
+                                          <br><br>
+                                       </p>
                                     </div>
                                  </div>
                               </div>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                       <h4 class="section-title">Fotos subidas</h4>
+                                 </div>
+                              </div>
+                              <ul id="photoList" class="row drag">
+                                    <li class="col-md-3">
+                                        <div class="thumbnail">
+                                          <div class="thumbnail-header">
+                                             <img src="assets/img/hotel1/shot.jpg" alt="">
+
+                                             <a data-toggle="modal" data-target="#confirmDelete" href="#" class="thumbnail-delete btn btn-danger btn-xs btn-fill" role="button"><i class="fa fa-times fa-lg"></i></a>
+
+                                             <div class="thumnail-footer">
+                                                <strong>mendoza-photo-img001.jpg</strong>
+                                                <p class="text-muted">1228.2 kb</p>
+                                             </div>
+                                          </div>
+                                          <div class="caption">
+                                             <textarea placeholder="Descripción" class="form-control" name="photo01" id="photo01" rows="1">Cocina</textarea>
+                                             <br>
+                                          </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <div class="thumbnail">
+                                          <div class="thumbnail-header">
+                                             <img src="assets/img/hotel2/shot.jpg" alt="">
+
+                                             <a data-toggle="modal" data-target="#confirmDelete" href="#" class="thumbnail-delete btn btn-danger btn-xs btn-fill" role="button"><i class="fa fa-times fa-lg"></i></a>
+
+                                             <div class="thumnail-footer">
+                                                <strong>mendoza-photo-img002.jpg</strong>
+                                                <p class="text-muted">640.2 kb</p>
+                                             </div>
+                                          </div>
+                                          <div class="caption">
+                                             <textarea placeholder="Descripción" class="form-control" name="photo02" id="photo02" rows="1">Living</textarea>
+                                             <br>                                           
+                                          </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <div class="thumbnail">
+                                          <div class="thumbnail-header">
+                                             <img src="assets/img/hotel3/shot.jpg" alt="">
+
+                                             <a data-toggle="modal" data-target="#confirmDelete" href="#" class="thumbnail-delete btn btn-danger btn-xs btn-fill" role="button"><i class="fa fa-times fa-lg"></i></a>
+
+                                             <div class="thumnail-footer">
+                                                <strong>mendoza-photo-img003.jpg</strong>
+                                                <p class="text-muted">942.9 kb</p>
+                                             </div>
+                                          </div>
+                                          <div class="caption">
+                                             <textarea placeholder="Descripción" class="form-control" name="photo03" id="photo03" rows="1"></textarea>
+                                             <br>
+                                          </div>
+                                        </div>
+                                    </li>
+                                    
+                              </ul>
                            </div>
                            <!-- /Fotos -->
                            <!-- Planes -->
@@ -468,8 +542,8 @@
                      <!--Footer button-->
                      <div class="first-footer panel-footer text-right">
                         <div class="box-inline">
-                           <button class="previous btn btn-default btn-fill" type="button">Anterior</button>
-                           <button class="next btn btn-default btn-success btn-fill" type="button">Guardar y Continuar</button>
+                           <button class="previous btn btn-default btn-fill btn-lg" type="button">Anterior</button>
+                           <button class="next btn btn-default btn-success btn-fill btn-lg" type="button">Guardar y Continuar</button>
                         </div>
                      </div>
                      <div class="second-footer panel-footer text-center">
@@ -492,8 +566,92 @@
    </div>
    <!-- /Contenedor Wizard -->
 </div>
+
+<div id="confirmDelete" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+        <h4 class="modal-title">¿Estás seguro?</h4>
+      </div>
+      <div class="modal-body">
+        <p>¿Estás seguro de que deseas borrar la foto?</p>
+      </div>
+      <div class="modal-footer">
+         <div class="row">
+            <div class="col-12-xs text-center">
+                <button data-dismiss="modal" class="btn btn-default btn-md">No</button>
+                <button class="btn btn-danger btn-fill btn-md">Si, borrar foto</button>
+            </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <?php
    include("footer.php");
 ?>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sortable/0.9.13/jquery-sortable-min.js"></script>
+
+<script>
+
+      $(document).ready(function()  {
+
+            $(function () {
+               $('#map').locationpicker({
+                  location: {latitude: 0, longitude: 0}, 
+                  radius: 300,
+                  inputBinding: {
+                     locationNameInput: $('#address')        
+                  },
+                  enableAutocomplete: true
+               });
+            });
+    
+            var adjustment
+
+            var group = $("ul.drag").sortable({
+                 group: 'drag',
+                 itemSelector: 'li',
+                 containerSelector: 'ul',
+                 vertical: false,
+                 placeholder: '<li class="col-md-3"><div class="placeholder"></div></li>',
+                 pullPlaceholder: false,
+                  onMousedown: function ($item, _super, event) {
+                      if (!event.target.nodeName.match(/^(input|select|textarea)$/i)) {
+                      event.preventDefault()
+                      return true
+                    }
+                 },
+                 // set item relative to cursor position
+                 onDragStart: function ($item, container, _super) {
+                     var offset = $item.offset(),
+                     pointer = container.rootGroup.pointer
+
+                     adjustment = {
+                       left: pointer.left - offset.left,
+                       top: pointer.top - offset.top
+                     }
+
+                     _super($item, container)
+                 },
+                 onDrag: function ($item, position) {
+                 $item.css({
+                     width: 200,
+                     height: 200,
+                     left: position.left - adjustment.left,
+                     top: position.top - adjustment.top
+                 })
+                 },
+                 serialize: function (parent, children, isContainer) {
+                     return isContainer ? children.join() : parent.attr('rel')
+                 }
+             })
+         });
+</script>
+
+
 <!--  Plugins -->
 <script src="assets/js/wizard.js"></script>

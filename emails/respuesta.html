@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)https://mandrillapp.com/activity/content?id=20160312_5811e257e6284c8cbf146f3075bbf57f -->
+<html hola_ext_inject="disabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> |  | Mandrill</title>
+    
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://mandrillapp.com/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./respuesta_files/common.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./respuesta_files/mandrill.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./respuesta_files/popup.css" type="text/css" media="screen" charset="utf-8">
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie8.css" type="text/css" media="screen" charset="utf-8">
+    <![endif]-->
+    <script async="" src="./respuesta_files/analytics.js"></script><script type="text/javascript" src="./respuesta_files/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="./respuesta_files/mdcommon.min.js"></script>
+    <script type="text/javascript" src="./respuesta_files/jquery-ui-1.10.3.custom.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-329148-80', 'auto', {
+            'allowLinker': true
+        });
+        ga('require', 'linker');
+        ga('linker:autoLink', [/(.*\.)?mandrill(app)?\.com$/], false, true);
+        ga('send', 'pageview');
+
+    </script>
+
+    <script type="text/javascript">
+        //$(function() {
+        //    $('#tabs').tabs();
+        //});
+        $(document).ready(function() {
+
+                        $('#show-tab-html').addClass('btn-selected');
+            $('#tab-text').hide();
+            var frame = $('#html-frame')[0];
+            var resizeFrame = function() { frame.style.height = (frame.contentWindow.document.body.scrollHeight + 60) + 'px'; };
+            //We're doing this via innerHTML without an obvious onload event, so instead just back off and resize the iframe as we go
+            resizeFrame();
+            setTimeout(resizeFrame, 1000);
+            setTimeout(resizeFrame, 2000);
+            setTimeout(resizeFrame, 5000);
+            setTimeout(resizeFrame, 10000);
+            
+            $('#show-tab-html').click(function(event) {
+                $('#tab-text').fadeOut('250');
+                $('#tab-html').fadeIn('250');
+                $('#show-tab-text').removeClass('btn-selected');
+                $('#show-tab-html').addClass('btn-selected');
+                event.preventDefault();
+            });
+
+            $('#show-tab-text').click(function(event) {
+                $('#tab-html').fadeOut('250');
+                $('#tab-text').fadeIn('250');
+                $('#show-tab-html').removeClass('btn-selected');
+                $('#show-tab-text').addClass('btn-selected');
+                event.preventDefault();
+            });
+        });
+    </script>
+</head>
+<body cz-shortcut-listen="true">
+    <div id="flash">
+        
+    </div>
+    <div id="content">
+        <div class="popup-header">
+            <ul class="linear-list button-nav above0">
+                <li><button href="#tab-html" id="show-tab-html" class="btn btn-selected">HTML</button></li>                <li><button href="#tab-text" id="show-tab-text" class="btn">Text</button></li>            </ul>
+        </div>
+        <div class="tab-container">
+            <div id="tab-html" class="tab-content">
+                <iframe id="html-frame" src="./respuesta_files/content-html.html" width="100%" sandbox="allow-same-origin" style="height: 833px;"></iframe>
+            </div>            <div id="tab-text" class="tab-content" style="display: none;">
+                <pre style="font-weight: normal; color: black;">                          Hola ,
+
+ Ha recibido una respuesta de su consulta para la propiedad
+ DEPARTAMENTO EN SAN MARTIN VIÑA CABLE WIFI VISTA AL MAR 75.000 6 PERSONAS
+&lt;http://www.parairnos.cl/arriendo/vina-del-mar/departamento-en-san-martin-vina-cable-wifi-vista-al-mar-75000-6-personas-17721.html&gt;.
+
+ Su consulta:
+ "Hola, buenas tardes, quisiera saber qué posibilidades hay de una
+importante rebaja en el precio ?. De verdad me interesa el dpto, pero exede
+en mucho nuestro presupuesto. A decir verdad nos vendría mejor uno de tres
+dormitorios, pero, buscamos máximo 60.000 chl diarios Gracias. Saludos"
+ Respuesta:
+ "visite mi pagina www.amcpropiedades.com valor diario 50.000 códigos
+D0004,D016,D046. esos departamentos esta en su presupuesto. Saludos."
+
+ 
+
+ Saludos cordiales,
+ Equipo Parairnos
+ parairnos.com
+&lt;http://www.parairnos.com/?utm_source=respuesta-de-consulta&amp;utm_medium=email&gt;
+                   © 2010 parairnos.com</pre>
+            </div>        </div>
+</div>
+
+
+</body></html>

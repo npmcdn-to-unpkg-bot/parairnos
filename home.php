@@ -201,6 +201,198 @@ include("header.php");
             </div>
             <!-- /Aviso -->
          </div>
+         <br>
+         <div class="row avisos-destacados">
+            <div class="col-md-12">
+                      <div id="Carousel" class="carousel slide">
+                       
+                      <ol class="carousel-indicators">
+                          <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#Carousel" data-slide-to="1"></li>
+                      </ol>
+                       
+                      <!-- Carousel items -->
+                      <div class="carousel-inner">
+                          
+                      <div class="item active">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <div class="image" style="max-height: 180px; background-image: url(assets/img/hotel2/6.jpg); background-position: center center; background-size: cover;"><img alt="..." src="assets/img/hotel2/6.jpg" style="display: none;">
+                                    </div>
+                                    <span class="destacado-ad">
+                                       <span class="label label-warning label-fill">Destacado</span>
+                                    </span>
+                                    <div class="content">
+                                        <a class="card-link" href="detalle.php">
+                                            <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
+                                        </a>
+                                        <p class="category text-left">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star-o "></i>
+                                            <span class="review-total">(12)</span>
+                                        </p>
+                                        <a class="card-link" href="detalle.php">
+                                            <p class="description">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
+                                        </a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!-- termina tarjeta -->
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <div class="image" style="max-height: 180px; background-image: url(assets/img/hotel2/2.jpg); background-position: center center; background-size: cover;"><img alt="..." src="assets/img/hotel2/2.jpg" style="display: none;">
+                                    </div>
+                                    <span class="destacado-ad">
+                                       <span class="label label-warning label-fill">Destacado</span>
+                                    </span>
+                                    <div class="content">
+                                        <a class="card-link" href="detalle.php">
+                                            <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
+                                        </a>
+                                        <p class="category text-left">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star-o "></i>
+                                            <span class="review-total">(12)</span>
+                                        </p>
+                                        <a class="card-link" href="detalle.php">
+                                            <p class="description">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
+                                        </a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!-- termina tarjeta -->
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <div class="image" style="max-height: 180px; background-image: url(assets/img/hotel2/3.jpg); background-position: center center; background-size: cover;"><img alt="..." src="assets/img/hotel2/3.jpg" style="display: none;">
+                                    </div>
+                                    <span class="destacado-ad">
+                                       <span class="label label-warning label-fill">Destacado</span>
+                                    </span>
+                                    <div class="content">
+                                        <a class="card-link" href="detalle.php">
+                                            <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
+                                        </a>
+                                        <p class="category text-left">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star-o "></i>
+                                            <span class="review-total">(12)</span>
+                                        </p>
+                                        <a class="card-link" href="detalle.php">
+                                            <p class="description">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
+                                        </a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!-- termina tarjeta -->
+                            </div>
+                        </div><!--.row-->
+                      </div><!--.item-->
+                       
+                      <div class="item">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <div class="image" style="max-height: 180px; background-image: url(assets/img/hotel2/4.jpg); background-position: center center; background-size: cover;"><img alt="..." src="assets/img/hotel2/4.jpg" style="display: none;">
+                                    </div>
+                                    <span class="destacado-ad">
+                                       <span class="label label-warning label-fill">Destacado</span>
+                                    </span>
+                                    <div class="content">
+                                        <a class="card-link" href="detalle.php">
+                                            <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
+                                        </a>
+                                        <p class="category text-left">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star-o "></i>
+                                            <span class="review-total">(12)</span>
+                                        </p>
+                                        <a class="card-link" href="detalle.php">
+                                            <p class="description">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
+                                        </a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!-- termina tarjeta -->
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <div class="image" style="max-height: 180px; background-image: url(assets/img/hotel2/5.jpg); background-position: center center; background-size: cover;"><img alt="..." src="assets/img/hotel2/5.jpg" style="display: none;">
+                                    </div>
+                                    <span class="destacado-ad">
+                                       <span class="label label-warning label-fill">Destacado</span>
+                                    </span>
+                                    <div class="content">
+                                        <a class="card-link" href="detalle.php">
+                                            <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
+                                        </a>
+                                        <p class="category text-left">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star-o "></i>
+                                            <span class="review-total">(12)</span>
+                                        </p>
+                                        <a class="card-link" href="detalle.php">
+                                            <p class="description">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
+                                        </a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!-- termina tarjeta -->
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <div class="image" style="max-height: 180px; background-image: url(assets/img/hotel2/1.jpg); background-position: center center; background-size: cover;"><img alt="..." src="assets/img/hotel2/1.jpg" style="display: none;">
+                                    </div>
+                                    <span class="destacado-ad">
+                                       <span class="label label-warning label-fill">Destacado</span>
+                                    </span>
+                                    <div class="content">
+                                        <a class="card-link" href="detalle.php">
+                                            <h4 class="title text-info">Arriendo departamento Termas de Chillán </h4>
+                                        </a>
+                                        <p class="category text-left">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star-o "></i>
+                                            <span class="review-total">(12)</span>
+                                        </p>
+                                        <a class="card-link" href="detalle.php">
+                                            <p class="description">Departamento para 6 personas en Chillán, Chillán, Región del Bío Bío, Chile</p>
+                                        </a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!-- termina tarjeta -->
+                            </div>
+                        </div><!--.row-->
+                      </div><!--.item-->
+                       
+                      </div><!--.carousel-inner-->
+                        <a data-slide="prev" href="#Carousel" class="left carousel-control"> <i class="fa fa-chevron-left"></i></a>
+                        <a data-slide="next" href="#Carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                      </div><!--.Carousel-->
+                       
+            </div>
+         </div>
          <!-- Avisos destacados -->
          <!-- Destinos populares -->
          <div class="row destinos-populares">
@@ -377,6 +569,42 @@ include("header.php");
       <div class="space"></div>
    </div>
    <!-- /Termina contenedor -->
+<style> 
+.carousel {
+    margin-bottom: 20px;
+
+}
+/* The controlsy */
+.carousel-control {
+   left: -102px;
+}
+.carousel-control.right {
+   right: -82px;
+}
+/* The indicators */
+.carousel-indicators {
+   margin-top: 30px; 
+   right: 50%;
+   top: auto;
+   bottom: -30px;
+   margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+   background: #cecece;
+}
+.carousel-indicators .active {
+background: #428bca;
+}
+</style>
 <?php
 include("footer.php");
 ?>
+
+<script type="text/javascript">
+   $(document).ready(function() {
+       $('#Carousel').carousel({
+           interval: 5000
+       })
+   });
+</script>

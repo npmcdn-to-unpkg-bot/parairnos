@@ -56,13 +56,13 @@
          <div class="col-md-3">
             <div class="card" id="admin-sidebar" role="navigation">
                <div class="list-group">
-                  <a href="#" class="list-group-item selected"><i class="fa fa-inbox"></i>
-                  Todos los recibidos</a>
-                  <a href="#" class="list-group-item"> <i class="fa fa-check"></i>
+                  <a href="mensajes.php" class="list-group-item selected"><i class="fa fa-inbox"></i>
+                  Todos los recibidos <span class="badge pull-right">34</span></a>
+                  <a href="mensajes.php" class="list-group-item"> <i class="fa fa-check"></i>
                   Leídos</a>
-                  <a href="#" class="list-group-item"><i class="fa fa-pause"></i>
+                  <a href="mensajes.php" class="list-group-item"><i class="fa fa-bolt"></i>
                   No leídos</a>
-                  <a href="#" class="list-group-item"><i class="fa fa-trash"></i>
+                  <a href="mensajes.php" class="list-group-item"><i class="fa fa-trash"></i>
                   Papelera</a>
                </div>
             </div>
@@ -72,7 +72,7 @@
          <div class="col-md-9">
             <div class="card">
                <div class="content">
-                  <h4>Mensajes</h4>
+                  <h4>Todos los mensajes recibidos</h4>
                   <hr>
                   <div class="mail-box pre-scrollable">
                      <aside class="lg-side">
@@ -122,161 +122,127 @@
                                     <li><a href="#"><i class="fa fa-trash-o"></i> Eliminar</a></li>
                                  </ul>
                               </div>
-                              <ul class="unstyled inbox-pagination">
-                                 <li><span>1-50 de 234</span></li>
+                           </div>
+                           <!-- Opciones de mensajes -->
+                           <!-- Tabla de mensajes -->
+                           <div class="table-responsive">
+                              <table class="table table-inbox table-hover">
+                                 <tbody> 
+                                    <tr class="unread clickable-row" data-href="respuesta.php">
+                                       <td class="inbox-small-cells">
+                                          <span class="checkbox">
+                                          <input type="checkbox" value="" data-toggle="checkbox">
+                                          </span>
+                                       </td>
+                                       <td class="view-message dont-show">Luís Acevedo</td>
+                                       <td class="view-message">Departamento Euromarina 3 dormtorios 2 camas matrimonial </td>
+                                       <td class="view-message text-right">9:27 AM</td>
+                                    </tr>
+                                    <tr class="unread clickable-row" data-href="respuesta.php">
+                                       <td class="inbox-small-cells">
+                                          <span class="checkbox">
+                                          <input type="checkbox" value="" data-toggle="checkbox">
+                                          </span>
+                                       </td>
+                                       <td class="view-message dont-show">Luís Concepción</td>
+                                       <td class="view-message">Arriendo departamento Termas de Chillán</td>
+                                       <td class="view-message text-right">15 Marzo</td>
+                                    </tr>
+                                    <tr class="unread clickable-row" data-href="respuesta.php">
+                                       <td class="inbox-small-cells">
+                                          <span class="checkbox">
+                                          <input type="checkbox" value="" data-toggle="checkbox">
+                                          </span>
+                                       </td>
+                                       <td class="view-message dont-show">Carolina Mejía</td>
+                                       <td class="view-message">Alojamiento en el Centro de Santiago departamentos 1 y 2 Dormitorios </td>
+                                       <td class="view-message text-right">15 de Marzo</td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="respuesta.php">
+                                       <td class="inbox-small-cells">
+                                          <span class="checkbox">
+                                          <input type="checkbox" value="" data-toggle="checkbox">
+                                          </span>
+                                       </td>
+                                       <td class="view-message dont-show">Daniel Monteninos</td>
+                                       <td class="view-message">Alojamiento en el Centro de Santiago departamentos 1 y 2 Dormitorios</td>
+                                       <td class="view-message text-right">1 de Marzo</td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="respuesta.php">
+                                       <td class="inbox-small-cells">
+                                          <span class="checkbox">
+                                          <input type="checkbox" value="" data-toggle="checkbox">
+                                          </span>
+                                       </td>
+                                       <td class="view-message dont-show">Gabriela Pérez</td>
+                                       <td class="view-message">Departamento Euromarina 3 dormtorios 2 camas matrimonial</td>
+                                       <td class="view-message text-right">23 de Mayo</td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="respuesta.php">
+                                       <td class="inbox-small-cells">
+                                          <span class="checkbox">
+                                          <input type="checkbox" value="" data-toggle="checkbox">
+                                          </span>
+                                       </td>
+                                       <td class="view-message dont-show">Marcelo Rivas </td>
+                                       <td class="view-message">Departamento Euromarina 3 dormtorios 2 camas matrimonial</td>
+                                       <td class="view-message text-right">14 de Marzo</td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="respuesta.php">
+                                       <td class="inbox-small-cells">
+                                          <span class="checkbox">
+                                          <input type="checkbox" value="" data-toggle="checkbox">
+                                          </span>
+                                       </td>
+                                       <td class="view-message dont-show">Pedro Lara</td>
+                                       <td class="view-message">Departamento Euromarina 3 dormtorios 2 camas matrimonial</td>
+                                       <td class="view-message text-right">19 de Febrero</td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="respuesta.php">
+                                       <td class="inbox-small-cells">
+                                          <span class="checkbox">
+                                          <input type="checkbox" value="" data-toggle="checkbox">
+                                          </span>
+                                       </td>
+                                       <td class="view-message dont-show">Micaela Rodríguez</td>
+                                       <td class="view-message view-message">Departamento Euromarina 3 dormtorios 2 camas matrimonial</td>
+                                       <td class="view-message text-right">4 de Marzo</td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="respuesta.php">
+                                       <td class="inbox-small-cells">
+                                          <span class="checkbox">
+                                          <input type="checkbox" value="" data-toggle="checkbox">
+                                          </span>
+                                       </td>
+                                       <td class="view-message dont-show">Carlos Medina</td>
+                                       <td class="view-message view-message">Departamento Euromarina 3 dormtorios 2 camas matrimonial</td>
+                                       <td class="view-message text-right">13 de Junio</td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="respuesta.php">
+                                       <td class="inbox-small-cells">
+                                          <span class="checkbox">
+                                          <input type="checkbox" value="" data-toggle="checkbox">
+                                          </span>
+                                       </td>
+                                       <td class="view-message dont-show">Rita Indiana</td>
+                                       <td class="view-message view-message">Departamento Euromarina 3 dormtorios 2 camas matrimonial</td>
+                                       <td class="view-message text-right">24 de Marzo</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <!-- Tabla de mensajes -->
+                           <br>
+                           <ul class="unstyled inbox-pagination">
+                                 <li><span>1-10 de 34</span></li>
                                  <li>
                                     <a class="np-btn" href="#"><i class="fa fa-angle-left  pagination-left"></i></a>
                                  </li>
                                  <li>
                                     <a class="np-btn" href="#"><i class="fa fa-angle-right pagination-right"></i></a>
                                  </li>
-                              </ul>
-                           </div>
-                           <!-- Opciones de mensajes -->
-                           <!-- Tabla de mensajes -->
-                           <div class="table-responsive">
-                              <table class="table table-inbox table-hover">
-                                 <tbody>
-                                    <tr class="unread">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">PHPClass</td>
-                                       <td class="view-message">Added a new class: Login Class Fast Site</td>
-                                       <td class="view-message text-right">9:27 AM</td>
-                                    </tr>
-                                    <tr class="unread">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">Google Webmaster </td>
-                                       <td class="view-message">Improve the search presence of WebSite</td>
-                                       <td class="view-message text-right">15 Marzo</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">JW Player</td>
-                                       <td class="view-message">Last Chance: Upgrade to Pro for </td>
-                                       <td class="view-message text-right">15 de Marzo</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">Tim Reid, S P N</td>
-                                       <td class="view-message">Boost Your Website Traffic</td>
-                                       <td class="view-message text-right">1 de Marzo</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">Freelancer.com</td>
-                                       <td class="view-message">Stop wasting your visitors </td>
-                                       <td class="view-message text-right">23 de Mayo</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">WOW Slider </td>
-                                       <td class="view-message">New WOW Slider v7.8 - 67% off</td>
-                                       <td class="view-message text-right">14 de Marzo</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">LinkedIn Pulse</td>
-                                       <td class="view-message">The One Sign Your Co-Worker Will Stab</td>
-                                       <td class="view-message text-right">19 de Febrero</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">Drupal Community</td>
-                                       <td class="view-message view-message">Welcome to the Drupal Community</td>
-                                       <td class="view-message text-right">4 de Marzo</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">Facebook</td>
-                                       <td class="view-message view-message">Somebody requested a new password </td>
-                                       <td class="view-message text-right">13 de Junio</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">Skype</td>
-                                       <td class="view-message view-message">Password successfully changed</td>
-                                       <td class="view-message text-right">24 de Marzo</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">Google+</td>
-                                       <td class="view-message">alireza, do you know</td>
-                                       <td class="view-message text-right">9 de Marzo</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="dont-show">Zoosk </td>
-                                       <td class="view-message">7 new singles we think you'll like</td>
-                                       <td class="view-message text-right">14 de Mayo</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">LinkedIn </td>
-                                       <td class="view-message">Alireza: Nokia Networks, System Group and </td>
-                                       <td class="view-message text-right">25 de Febrero</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="dont-show">Facebook</td>
-                                       <td class="view-message view-message">Your account was recently logged into</td>
-                                       <td class="view-message text-right">14 de Marzo</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">Twitter</td>
-                                       <td class="view-message">Your Twitter password has been changed</td>
-                                       <td class="view-message text-right">7 de Abril</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">InternetSeer Website Monitoring</td>
-                                       <td class="view-message">http://golddesigner.org/ Performance Report</td>
-                                       <td class="view-message text-right">14 de Julio</td>
-                                    </tr>
-                                    <tr class="">
-                                       <td class="inbox-small-cells">
-                                          <input type="checkbox" class="mail-checkbox">
-                                       </td>
-                                       <td class="view-message dont-show">AddMe.com</td>
-                                       <td class="view-message">Submit Your Website to the AddMe Business Directory</td>
-                                       <td class="view-message text-right">10 de Agosto</td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                           <!-- Tabla de mensajes -->
+                           </ul>
+
                         </div>
                      </aside>
                   </div>
@@ -291,3 +257,11 @@
 <?php
 include("footer.php");
 ?>
+
+<script type="text/javascript">
+   jQuery(document).ready(function($) {
+    $(".clickable-row .view-message").click(function() {
+        window.document.location = $(this).parent().data("href");
+    });
+});
+</script>

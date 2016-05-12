@@ -150,7 +150,7 @@
                   </div>
                   <div class="row">
                      <div class="col-xs-12">
-                        <button class="btn btn-primary btn-block btn-lg btn-fill" type="submit">Quiero registrarme</button>
+                        <button class="btn btn-primary btn-block btn-lg btn-fill btn-round" type="submit">Quiero registrarme</button>
                      </div>
                   </div>
                   <br>

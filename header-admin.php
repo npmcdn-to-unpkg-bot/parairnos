@@ -37,6 +37,29 @@
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
+                     <li class="dropdown country-dropdown">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown"> 
+                        <img src="assets/img/flags/CL.png"/>
+                        <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li><a href="#"><img src="assets/img/flags/AR.png"/> Argentina</a></li>
+                           <li><a href="#"><img src="assets/img/flags/BR.png"/> Brasil</a></li>
+                           <li><a href="#"><img src="assets/img/flags/CO.png"/> Colombia</a></li>
+                           <li><a href="#"><img src="assets/img/flags/SV.png"/> Uruguay</a></li>
+                        </ul>
+                     </li>
+                     <li class="dropdown language-dropdown">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown"> 
+                        Español
+                        <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Español</a></li>
+                           <li><a href="#">English</a></li>
+                           <li><a href="#">Portuguese</a></li>
+                        </ul>
+                     </li>
                      <li class="dropdown dropdown dropdown-user">
                         <a href="#" class="dropdown-toggle " data-toggle="dropdown"> 
                         <img class="avatar" src="assets/img/placeholder.png" alt="..."/>
@@ -49,18 +72,6 @@
                            <li><a class="text-danger" href="#">
                               Salir</a>
                            </li>
-                        </ul>
-                     </li>
-                     <li class="dropdown country-dropdown">
-                        <a href="#" class="dropdown-toggle " data-toggle="dropdown"> 
-                        <img src="assets/img/flags/CL.png"/>
-                        <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                           <li><a href="#"><img src="assets/img/flags/AR.png"/> Argentina</a></li>
-                           <li><a href="#"><img src="assets/img/flags/BR.png"/> Brasil</a></li>
-                           <li><a href="#"><img src="assets/img/flags/CO.png"/> Colombia</a></li>
-                           <li><a href="#"><img src="assets/img/flags/SV.png"/> Uruguay</a></li>
                         </ul>
                      </li>
                      <li>
