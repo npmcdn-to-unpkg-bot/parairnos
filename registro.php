@@ -183,7 +183,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js"></script>
 <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script> 
-<script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
 <!--  Activaciones JS -->
 <script src="assets/js/get-shit-done.js"></script>
 <script type="text/javascript">
